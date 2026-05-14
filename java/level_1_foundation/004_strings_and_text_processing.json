@@ -1,0 +1,277 @@
+{
+  "id": "java_foundation_004",
+  "title": "Strings and Text Processing",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 40,
+
+  "content": {
+    "topic_intro": "Strings are used to store and work with text in Java.",
+
+    "why_learn_this": "Apps use text everywhere — usernames, messages, passwords, emails, search, chat systems, and notifications.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "A String stores text."
+      },
+
+      {
+        "type": "real_life",
+        "text": "A String is like a sentence written on paper. Java stores that sentence inside a variable."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "Whenever you type names, messages, or words in apps, Strings are being used."
+      },
+
+      {
+        "type": "technical",
+        "text": "String is a Java class used to store sequences of characters."
+      },
+
+      {
+        "type": "deep",
+        "text": "Strings manage textual data using character sequences and provide built-in methods for manipulation, searching, formatting, and comparison."
+      }
+    ],
+
+    "basic_terms": {
+      "String": "Datatype used to store text.",
+      "characters": "Letters, numbers, spaces, and symbols inside text.",
+      "double_quotes": "Strings must always use double quotes.",
+
+      "example": "String name = \"John\";",
+
+      "breakdown": [
+        "String → datatype for text",
+        "name → variable name",
+        "= → assignment operator",
+        "\"John\" → text value",
+        "; → statement ending"
+      ]
+    },
+
+    "syntax": {
+      "code": "String variableName = \"text\";",
+      "explanation": "Strings store text values inside double quotes."
+    },
+
+    "string_examples": [
+
+      {
+        "type": "basic",
+        "code": "String name = \"John\";",
+        "output": "name stores John",
+
+        "step_by_step": [
+          "String datatype is used",
+          "name variable is created",
+          "John is stored as text"
+        ],
+
+        "real_life": "Used for storing user names."
+      },
+
+      {
+        "type": "social_media",
+        "code": "String username = \"brainzo_user\";",
+        "output": "username stores brainzo_user",
+
+        "step_by_step": [
+          "username variable stores account name"
+        ],
+
+        "real_life": "Used in Instagram or gaming profiles."
+      },
+
+      {
+        "type": "chat_app",
+        "code": "String message = \"Hello World\";",
+        "output": "message stores Hello World",
+
+        "step_by_step": [
+          "message variable stores chat text"
+        ],
+
+        "real_life": "Used in messaging apps."
+      },
+
+      {
+        "type": "education",
+        "code": "String college = \"ABC College\";",
+        "output": "college stores ABC College",
+
+        "step_by_step": [
+          "college variable stores institution name"
+        ],
+
+        "real_life": "Used in student systems."
+      },
+
+      {
+        "type": "app",
+        "code": "String appName = \"Brainzo\";",
+        "output": "appName stores Brainzo",
+
+        "step_by_step": [
+          "appName variable stores application title"
+        ],
+
+        "real_life": "Used in software applications."
+      }
+    ],
+
+    "string_methods": [
+
+      {
+        "method": "length()",
+        "purpose": "Finds total characters.",
+
+        "example": {
+          "code": "String name = \"Brainzo\";\nSystem.out.println(name.length());",
+          "output": "7"
+        },
+
+        "explanation": "Counts total letters inside String."
+      },
+
+      {
+        "method": "toUpperCase()",
+        "purpose": "Converts text to uppercase.",
+
+        "example": {
+          "code": "String city = \"chennai\";\nSystem.out.println(city.toUpperCase());",
+          "output": "CHENNAI"
+        },
+
+        "explanation": "Changes all letters to capital letters."
+      },
+
+      {
+        "method": "toLowerCase()",
+        "purpose": "Converts text to lowercase.",
+
+        "example": {
+          "code": "String language = \"JAVA\";\nSystem.out.println(language.toLowerCase());",
+          "output": "java"
+        },
+
+        "explanation": "Changes all letters to small letters."
+      },
+
+      {
+        "method": "contains()",
+        "purpose": "Checks if text exists inside String.",
+
+        "example": {
+          "code": "String text = \"Hello Java\";\nSystem.out.println(text.contains(\"Java\"));",
+          "output": "true"
+        },
+
+        "explanation": "Checks whether Java exists inside text."
+      },
+
+      {
+        "method": "equals()",
+        "purpose": "Compares two Strings.",
+
+        "example": {
+          "code": "String a = \"Java\";\nString b = \"Java\";\nSystem.out.println(a.equals(b));",
+          "output": "true"
+        },
+
+        "explanation": "Checks if both Strings are exactly same."
+      }
+    ],
+
+    "string_concatenation": {
+      "title": "Joining Strings",
+
+      "example": {
+        "code": "String firstName = \"John\";\nString lastName = \"Doe\";\nString fullName = firstName + \" \" + lastName;\nSystem.out.println(fullName);",
+        "output": "John Doe"
+      },
+
+      "explanation": "The + operator joins text together."
+    },
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "String name = 'John';",
+        "correct": "String name = \"John\";",
+        "why_wrong": "Strings use double quotes."
+      },
+
+      {
+        "wrong": "String age = 20;",
+        "correct": "String age = \"20\";",
+        "why_wrong": "String stores text, not raw numbers."
+      },
+
+      {
+        "wrong": "name.length;",
+        "correct": "name.length();",
+        "why_wrong": "length() is a method and needs brackets."
+      }
+    ],
+
+    "common_mistakes": [
+      "Using single quotes instead of double quotes",
+      "Forgetting brackets in methods",
+      "Using == instead of equals()",
+      "Mixing numbers and Strings incorrectly",
+      "Forgetting String is case-sensitive"
+    ],
+
+    "practice": [
+      "Create 5 String variables.",
+      "Print your name using String.",
+      "Convert text to uppercase.",
+      "Check String length.",
+      "Join first name and last name.",
+      "Check if a sentence contains a word."
+    ],
+
+    "quiz": [
+      {
+        "question": "Which datatype stores text?",
+        "answer": "String"
+      },
+
+      {
+        "question": "Which method finds String length?",
+        "answer": "length()"
+      },
+
+      {
+        "question": "Which operator joins Strings?",
+        "answer": "+"
+      },
+
+      {
+        "question": "Which method compares Strings?",
+        "answer": "equals()"
+      },
+
+      {
+        "question": "Do Strings use double quotes?",
+        "answer": "Yes"
+      }
+    ],
+
+    "mini_project": {
+      "title": "User Profile Generator",
+      "task": "Create a program that stores user name, city, and bio using Strings and prints a formatted profile."
+    },
+
+    "revision_summary": [
+      "Strings store text.",
+      "Strings use double quotes.",
+      "String methods help manipulate text.",
+      "length() counts characters.",
+      "equals() compares Strings.",
+      "+ joins Strings together."
+    ]
+  }
+}
