@@ -1,0 +1,245 @@
+{
+  "id": "java_foundation_010",
+  "title": "File I/O Basics in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 65,
+
+  "content": {
+    "topic_intro": "File I/O means reading data from files and writing data into files.",
+
+    "why_learn_this": "Without file handling, programs cannot save user data, settings, reports, logs, or application information permanently.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "File I/O helps programs read and write files."
+      },
+
+      {
+        "type": "real_life",
+        "text": "Saving a game, storing notes, or downloading reports all use file handling."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "Files help programs remember information even after the app closes."
+      },
+
+      {
+        "type": "technical",
+        "text": "File I/O allows Java applications to interact with external storage systems."
+      },
+
+      {
+        "type": "deep",
+        "text": "File handling enables persistent data management through structured input and output streams connected to the file system."
+      }
+    ],
+
+    "basic_terms": {
+      "file": "A storage container for data.",
+      "read": "Getting data from file.",
+      "write": "Saving data into file.",
+      "FileWriter": "Class used to write files.",
+      "Scanner": "Class used to read files.",
+
+      "example": "FileWriter writer = new FileWriter(\"data.txt\");",
+
+      "breakdown": [
+        "FileWriter creates writing object",
+        "writer is object name",
+        "data.txt is file name"
+      ]
+    },
+
+    "creating_file": {
+
+      "title": "Creating a File",
+
+      "code": "import java.io.File;\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        try {\n            File file = new File(\"data.txt\");\n\n            if(file.createNewFile()) {\n                System.out.println(\"File Created\");\n            } else {\n                System.out.println(\"File Already Exists\");\n            }\n\n        } catch(IOException e) {\n            System.out.println(\"Error Occurred\");\n        }\n    }\n}",
+
+      "step_by_step": [
+        "File object is created",
+        "createNewFile() tries creating file",
+        "Program checks if file exists",
+        "try-catch handles errors"
+      ],
+
+      "real_life": "Apps create settings and save files."
+    },
+
+    "writing_file": {
+
+      "title": "Writing Into File",
+
+      "code": "import java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        try {\n            FileWriter writer = new FileWriter(\"data.txt\");\n\n            writer.write(\"Hello Brainzo\");\n\n            writer.close();\n\n            System.out.println(\"Data Written Successfully\");\n\n        } catch(IOException e) {\n            System.out.println(\"Error Writing File\");\n        }\n    }\n}",
+
+      "step_by_step": [
+        "FileWriter object is created",
+        "write() stores text into file",
+        "close() saves and closes file",
+        "Success message is printed"
+      ],
+
+      "output": "Data Written Successfully",
+
+      "real_life": "Saving notes, messages, reports."
+    },
+
+    "reading_file": {
+
+      "title": "Reading File Data",
+
+      "code": "import java.io.File;\nimport java.io.FileNotFoundException;\nimport java.util.Scanner;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        try {\n            File file = new File(\"data.txt\");\n\n            Scanner sc = new Scanner(file);\n\n            while(sc.hasNextLine()) {\n                String data = sc.nextLine();\n                System.out.println(data);\n            }\n\n            sc.close();\n\n        } catch(FileNotFoundException e) {\n            System.out.println(\"File Not Found\");\n        }\n    }\n}",
+
+      "step_by_step": [
+        "File object connects to file",
+        "Scanner reads file",
+        "Loop reads line by line",
+        "Data is printed"
+      ],
+
+      "real_life": "Reading saved notes and user data."
+    },
+
+    "append_data": {
+
+      "title": "Appending Data",
+
+      "code": "FileWriter writer = new FileWriter(\"data.txt\", true);",
+
+      "explanation": "true allows adding data without deleting old content."
+    },
+
+    "file_examples": [
+
+      {
+        "type": "notes_app",
+        "purpose": "Store notes in file.",
+
+        "example": "writer.write(\"Study Java Daily\");"
+      },
+
+      {
+        "type": "game_save",
+        "purpose": "Save game progress.",
+
+        "example": "writer.write(\"Level 5 Completed\");"
+      },
+
+      {
+        "type": "chat_app",
+        "purpose": "Store chat history.",
+
+        "example": "writer.write(\"Hello User\");"
+      },
+
+      {
+        "type": "school_system",
+        "purpose": "Save student records.",
+
+        "example": "writer.write(\"John - 95 Marks\");"
+      },
+
+      {
+        "type": "logging_system",
+        "purpose": "Save application logs.",
+
+        "example": "writer.write(\"Login Success\");"
+      }
+    ],
+
+    "exception_handling": {
+
+      "title": "Why try-catch is Important",
+
+      "explanation": "File operations may fail if file does not exist or access is denied.",
+
+      "real_life": "Apps should not crash if file errors happen."
+    },
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "FileWriter writer = FileWriter(\"data.txt\");",
+        "correct": "FileWriter writer = new FileWriter(\"data.txt\");",
+        "why_wrong": "new keyword is required."
+      },
+
+      {
+        "wrong": "writer.write(\"Hello\")",
+        "correct": "writer.write(\"Hello\");",
+        "why_wrong": "Semicolon is missing."
+      },
+
+      {
+        "wrong": "writer.close",
+        "correct": "writer.close();",
+        "why_wrong": "close() is method."
+      },
+
+      {
+        "wrong": "Scanner sc = new Scanner();",
+        "correct": "Scanner sc = new Scanner(file);",
+        "why_wrong": "Scanner must connect to file."
+      }
+    ],
+
+    "common_mistakes": [
+      "Forgetting close()",
+      "Ignoring exceptions",
+      "Using wrong file path",
+      "Forgetting imports",
+      "Not handling missing files"
+    ],
+
+    "practice": [
+      "Create text file.",
+      "Write text into file.",
+      "Read text from file.",
+      "Append new data into file.",
+      "Build notes saving system.",
+      "Create student record saver."
+    ],
+
+    "quiz": [
+      {
+        "question": "Which class writes files?",
+        "answer": "FileWriter"
+      },
+
+      {
+        "question": "Which class reads files?",
+        "answer": "Scanner"
+      },
+
+      {
+        "question": "Why is close() important?",
+        "answer": "To save and close resources"
+      },
+
+      {
+        "question": "Which block handles errors?",
+        "answer": "try-catch"
+      },
+
+      {
+        "question": "Can Java create files?",
+        "answer": "Yes"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Simple Notes App",
+      "task": "Create a program that saves notes into a file and reads saved notes back to the user."
+    },
+
+    "revision_summary": [
+      "File I/O handles file operations.",
+      "FileWriter writes files.",
+      "Scanner reads files.",
+      "close() is important.",
+      "try-catch handles file errors.",
+      "Files help programs store permanent data."
+    ]
+  }
+}
