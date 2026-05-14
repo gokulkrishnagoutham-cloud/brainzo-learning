@@ -1,0 +1,351 @@
+{
+  "id": "java_practice_001",
+  "title": "Print Statements and Java Syntax Practice",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 45,
+
+  "content": {
+    "topic_intro": "This practice lesson helps students master Java print statements and basic syntax through exercises and debugging.",
+
+    "why_practice_this": "Print statements are the foundation of Java output and debugging. Understanding syntax is critical for writing correct programs.",
+
+    "practice_levels": [
+
+      {
+        "level": "Easy",
+
+        "description": "Basic print statement exercises.",
+
+        "questions": [
+          {
+            "question": "Print 'Hello Java' on screen.",
+
+            "hint": "Use System.out.println().",
+
+            "solution": "System.out.println(\"Hello Java\");",
+
+            "output": "Hello Java",
+
+            "explanation": [
+              "System.out.println() prints text.",
+              "Text must be inside double quotes.",
+              "Semicolon ends statement."
+            ]
+          },
+
+          {
+            "question": "Print your name.",
+
+            "hint": "Replace text inside quotes.",
+
+            "solution": "System.out.println(\"John\");",
+
+            "output": "John",
+
+            "explanation": [
+              "Strings are written inside double quotes.",
+              "println prints output and moves to next line."
+            ]
+          },
+
+          {
+            "question": "Print your city name.",
+
+            "hint": "Use println again.",
+
+            "solution": "System.out.println(\"Chennai\");",
+
+            "output": "Chennai",
+
+            "explanation": [
+              "println can print any text value."
+            ]
+          },
+
+          {
+            "question": "Print two lines separately.",
+
+            "hint": "Use two println statements.",
+
+            "solution": "System.out.println(\"Java\");\nSystem.out.println(\"Brainzo\");",
+
+            "output": [
+              "Java",
+              "Brainzo"
+            ],
+
+            "explanation": [
+              "Each println moves to next line."
+            ]
+          },
+
+          {
+            "question": "Print a welcome message.",
+
+            "hint": "Create custom text.",
+
+            "solution": "System.out.println(\"Welcome to Brainzo Tutor\");",
+
+            "output": "Welcome to Brainzo Tutor",
+
+            "explanation": [
+              "Programs can display messages for users."
+            ]
+          }
+        ]
+      },
+
+      {
+        "level": "Medium",
+
+        "description": "Practice Java syntax and formatting.",
+
+        "questions": [
+          {
+            "question": "Fix the syntax error:\nSystem.out.println(\"Hello\")",
+
+            "hint": "Check statement ending.",
+
+            "solution": "System.out.println(\"Hello\");",
+
+            "explanation": [
+              "Java statements require semicolon ;"
+            ]
+          },
+
+          {
+            "question": "Fix the syntax error:\nSystem.out.println('Java');",
+
+            "hint": "Strings use double quotes.",
+
+            "solution": "System.out.println(\"Java\");",
+
+            "explanation": [
+              "Single quotes are for char datatype."
+            ]
+          },
+
+          {
+            "question": "Print three different lines.",
+
+            "hint": "Use multiple println statements.",
+
+            "solution": "System.out.println(\"Line 1\");\nSystem.out.println(\"Line 2\");\nSystem.out.println(\"Line 3\");",
+
+            "output": [
+              "Line 1",
+              "Line 2",
+              "Line 3"
+            ],
+
+            "explanation": [
+              "Multiple println statements create multiple outputs."
+            ]
+          },
+
+          {
+            "question": "Print Java and your name in same line.",
+
+            "hint": "Use print instead of println.",
+
+            "solution": "System.out.print(\"Java \");\nSystem.out.print(\"John\");",
+
+            "output": "Java John",
+
+            "explanation": [
+              "print does not move to next line."
+            ]
+          },
+
+          {
+            "question": "Print special symbols like $, @, #.",
+
+            "hint": "Symbols can also be printed.",
+
+            "solution": "System.out.println(\"$ @ #\");",
+
+            "output": "$ @ #",
+
+            "explanation": [
+              "Strings can contain symbols and spaces."
+            ]
+          }
+        ]
+      },
+
+      {
+        "level": "Hard",
+
+        "description": "Logic building and debugging exercises.",
+
+        "questions": [
+          {
+            "question": "Find and fix all errors:\nSystem.out.println(Hello Java)",
+
+            "hint": "Text requires quotes.",
+
+            "solution": "System.out.println(\"Hello Java\");",
+
+            "explanation": [
+              "Strings require double quotes.",
+              "Without quotes Java thinks Hello is variable."
+            ]
+          },
+
+          {
+            "question": "Write a program that prints your name 5 times.",
+
+            "hint": "Use multiple println statements or loop.",
+
+            "solution": "System.out.println(\"John\");\nSystem.out.println(\"John\");\nSystem.out.println(\"John\");\nSystem.out.println(\"John\");\nSystem.out.println(\"John\");",
+
+            "output": [
+              "John",
+              "John",
+              "John",
+              "John",
+              "John"
+            ],
+
+            "explanation": [
+              "Programs can repeat outputs."
+            ]
+          },
+
+          {
+            "question": "Create formatted output:\nName: John\nCity: Chennai",
+
+            "hint": "Use separate println statements.",
+
+            "solution": "System.out.println(\"Name: John\");\nSystem.out.println(\"City: Chennai\");",
+
+            "output": [
+              "Name: John",
+              "City: Chennai"
+            ],
+
+            "explanation": [
+              "Formatted printing improves readability."
+            ]
+          },
+
+          {
+            "question": "Fix the code:\nSystem.out.print(\"Java\")\nSystem.out.println(\"Tutor\");",
+
+            "hint": "One statement is missing semicolon.",
+
+            "solution": "System.out.print(\"Java\");\nSystem.out.println(\"Tutor\");",
+
+            "output": "JavaTutor",
+
+            "explanation": [
+              "Semicolon is mandatory after statements."
+            ]
+          },
+
+          {
+            "question": "Print multiline motivational message.",
+
+            "hint": "Use multiple println statements.",
+
+            "solution": "System.out.println(\"Keep Learning\");\nSystem.out.println(\"Keep Building\");\nSystem.out.println(\"Become Strong Programmer\");",
+
+            "output": [
+              "Keep Learning",
+              "Keep Building",
+              "Become Strong Programmer"
+            ],
+
+            "explanation": [
+              "Programs can display structured information."
+            ]
+          }
+        ]
+      }
+    ],
+
+    "debugging_challenges": [
+      {
+        "wrong_code": "System.out.println(\"Hello\")",
+
+        "correct_code": "System.out.println(\"Hello\");",
+
+        "why_wrong": "Semicolon missing."
+      },
+
+      {
+        "wrong_code": "System.out.println('Java');",
+
+        "correct_code": "System.out.println(\"Java\");",
+
+        "why_wrong": "Strings use double quotes."
+      },
+
+      {
+        "wrong_code": "system.out.println(\"Hi\");",
+
+        "correct_code": "System.out.println(\"Hi\");",
+
+        "why_wrong": "System starts with capital S."
+      }
+    ],
+
+    "common_mistakes": [
+      "Forgetting semicolon",
+      "Using single quotes for Strings",
+      "Wrong capitalization",
+      "Missing brackets",
+      "Missing double quotes"
+    ],
+
+    "practice_tasks": [
+      "Print your school name.",
+      "Print your favorite programming language.",
+      "Print 5 lines together.",
+      "Create welcome banner.",
+      "Fix syntax errors.",
+      "Create formatted profile output."
+    ],
+
+    "quiz": [
+      {
+        "question": "Which method prints output with newline?",
+        "answer": "println()"
+      },
+
+      {
+        "question": "Which method prints without newline?",
+        "answer": "print()"
+      },
+
+      {
+        "question": "What ends Java statements?",
+        "answer": ";"
+      },
+
+      {
+        "question": "Do Strings require double quotes?",
+        "answer": "Yes"
+      },
+
+      {
+        "question": "Is Java case-sensitive?",
+        "answer": "Yes"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Console Profile Card",
+      "task": "Create formatted console output showing your name, city, college, goals, and favorite language."
+    },
+
+    "revision_summary": [
+      "println prints with new line.",
+      "print prints in same line.",
+      "Strings use double quotes.",
+      "Semicolon ends statements.",
+      "Java is case-sensitive.",
+      "Syntax correctness is important."
+    ]
+  }
+}
