@@ -1,0 +1,293 @@
+{
+  "id": "java_foundation_003",
+  "title": "Operators in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 30,
+  "content": {
+    "topic_intro": "Operators are symbols used to perform actions on values and variables in Java.",
+
+    "why_learn_this": "Without operators, Java programs cannot calculate, compare, assign values, or make decisions.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "Operators are symbols like +, -, *, / used to do operations."
+      },
+      {
+        "type": "real_life",
+        "text": "Operators are like calculator buttons. You press + to add, - to subtract, and = to assign or show a result."
+      },
+      {
+        "type": "student_friendly",
+        "text": "If variables store values, operators help us use those values."
+      },
+      {
+        "type": "technical",
+        "text": "Operators perform operations on operands and return a result."
+      },
+      {
+        "type": "deep",
+        "text": "Operators are core programming tools used for arithmetic, assignment, comparison, logical decision-making, and data manipulation."
+      }
+    ],
+
+    "basic_terms": {
+      "operator": "The symbol that performs an action.",
+      "operand": "The value or variable used by the operator.",
+      "example": "10 + 5",
+      "breakdown": [
+        "10 is an operand",
+        "+ is the operator",
+        "5 is another operand",
+        "15 is the result"
+      ]
+    },
+
+    "operator_types": [
+      {
+        "name": "Arithmetic Operators",
+        "purpose": "Used for mathematical calculations.",
+        "examples": [
+          {
+            "code": "int sum = 10 + 5;",
+            "output": "15",
+            "step_by_step": [
+              "10 and 5 are numbers",
+              "+ adds both numbers",
+              "15 is stored in sum"
+            ],
+            "real_life": "Adding marks of two subjects."
+          },
+          {
+            "code": "int difference = 20 - 8;",
+            "output": "12",
+            "step_by_step": [
+              "20 is the first value",
+              "- subtracts 8",
+              "12 is stored in difference"
+            ],
+            "real_life": "Finding remaining money after spending."
+          },
+          {
+            "code": "int product = 4 * 5;",
+            "output": "20",
+            "step_by_step": [
+              "4 and 5 are multiplied",
+              "* means multiplication",
+              "20 is stored in product"
+            ],
+            "real_life": "Calculating total price of 5 items."
+          },
+          {
+            "code": "int result = 20 / 4;",
+            "output": "5",
+            "step_by_step": [
+              "20 is divided by 4",
+              "/ means division",
+              "5 is stored in result"
+            ],
+            "real_life": "Sharing chocolates equally."
+          },
+          {
+            "code": "int remainder = 10 % 3;",
+            "output": "1",
+            "step_by_step": [
+              "10 divided by 3 gives remainder 1",
+              "% gives only the remainder",
+              "1 is stored in remainder"
+            ],
+            "real_life": "Checking if a number is even or odd."
+          }
+        ]
+      },
+
+      {
+        "name": "Assignment Operators",
+        "purpose": "Used to assign or update values.",
+        "examples": [
+          {
+            "code": "int age = 20;",
+            "output": "age stores 20",
+            "step_by_step": [
+              "int creates a whole number variable",
+              "age is the variable name",
+              "= assigns 20 into age"
+            ],
+            "real_life": "Saving age in a profile."
+          },
+          {
+            "code": "age += 5;",
+            "output": "age increases by 5",
+            "step_by_step": [
+              "age already has a value",
+              "+= adds 5 to current value",
+              "new value is stored again in age"
+            ],
+            "real_life": "Adding bonus points to score."
+          },
+          {
+            "code": "age -= 2;",
+            "output": "age decreases by 2",
+            "step_by_step": [
+              "-= subtracts 2",
+              "updated value is saved back"
+            ],
+            "real_life": "Reducing stock quantity after purchase."
+          },
+          {
+            "code": "score *= 2;",
+            "output": "score doubles",
+            "step_by_step": [
+              "*= multiplies current score by 2",
+              "new value replaces old value"
+            ],
+            "real_life": "Double points in a game."
+          },
+          {
+            "code": "price /= 2;",
+            "output": "price becomes half",
+            "step_by_step": [
+              "/= divides current value by 2",
+              "updated value is stored again"
+            ],
+            "real_life": "Applying 50% discount."
+          }
+        ]
+      },
+
+      {
+        "name": "Comparison Operators",
+        "purpose": "Used to compare two values. Result is true or false.",
+        "examples": [
+          {
+            "code": "10 == 10",
+            "output": "true",
+            "explanation": "Checks if both values are equal."
+          },
+          {
+            "code": "10 != 5",
+            "output": "true",
+            "explanation": "Checks if both values are not equal."
+          },
+          {
+            "code": "20 > 10",
+            "output": "true",
+            "explanation": "Checks if left value is greater."
+          },
+          {
+            "code": "5 < 8",
+            "output": "true",
+            "explanation": "Checks if left value is smaller."
+          },
+          {
+            "code": "10 >= 10",
+            "output": "true",
+            "explanation": "Checks if value is greater than or equal."
+          }
+        ]
+      },
+
+      {
+        "name": "Logical Operators",
+        "purpose": "Used to combine conditions.",
+        "examples": [
+          {
+            "code": "age > 18 && marks > 50",
+            "output": "true only if both conditions are true",
+            "explanation": "&& means AND."
+          },
+          {
+            "code": "isAdmin || isTeacher",
+            "output": "true if at least one condition is true",
+            "explanation": "|| means OR."
+          },
+          {
+            "code": "!isLoggedIn",
+            "output": "opposite value",
+            "explanation": "! changes true to false and false to true."
+          },
+          {
+            "code": "health > 0 && ammo > 0",
+            "output": "player can fight",
+            "explanation": "Gaming example: player needs health and ammo."
+          },
+          {
+            "code": "isPremium || hasFreeTrial",
+            "output": "user can access feature",
+            "explanation": "App example: premium or trial users can enter."
+          }
+        ]
+      }
+    ],
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "if (age = 18)",
+        "correct": "if (age == 18)",
+        "why_wrong": "= assigns value. == compares value."
+      },
+      {
+        "wrong": "int result = 10 / 0;",
+        "correct": "int result = 10 / 2;",
+        "why_wrong": "Division by zero causes error."
+      },
+      {
+        "wrong": "age =+ 5;",
+        "correct": "age += 5;",
+        "why_wrong": "+= means add and assign."
+      }
+    ],
+
+    "common_mistakes": [
+      "Using = instead of ==",
+      "Confusing && and ||",
+      "Forgetting that comparison returns true or false",
+      "Using % without understanding remainder",
+      "Dividing by zero"
+    ],
+
+    "practice": [
+      "Create two int variables and add them.",
+      "Create two int variables and subtract them.",
+      "Check if age is greater than 18.",
+      "Use && with two conditions.",
+      "Build a simple marks eligibility checker."
+    ],
+
+    "quiz": [
+      {
+        "question": "Which operator is used for addition?",
+        "answer": "+"
+      },
+      {
+        "question": "Which operator checks equality?",
+        "answer": "=="
+      },
+      {
+        "question": "Which operator gives remainder?",
+        "answer": "%"
+      },
+      {
+        "question": "Which operator means AND?",
+        "answer": "&&"
+      },
+      {
+        "question": "Which operator means OR?",
+        "answer": "||"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Simple Calculator",
+      "task": "Create a program that adds, subtracts, multiplies, divides, and finds the remainder of two numbers."
+    },
+
+    "revision_summary": [
+      "Operators perform actions on values.",
+      "Arithmetic operators do math.",
+      "Assignment operators store or update values.",
+      "Comparison operators return true or false.",
+      "Logical operators combine conditions."
+    ]
+  }
+}
