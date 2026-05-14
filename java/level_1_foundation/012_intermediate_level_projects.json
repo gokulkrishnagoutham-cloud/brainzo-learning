@@ -1,0 +1,311 @@
+{
+  "id": "java_foundation_012",
+  "title": "Intermediate Level Java Projects",
+  "difficulty": "Intermediate",
+  "estimatedMinutes": 120,
+
+  "content": {
+    "topic_intro": "Intermediate projects combine multiple Java concepts into larger and smarter applications.",
+
+    "why_learn_this": "Intermediate projects help programmers move from beginner coding to real software development thinking.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "Intermediate projects are bigger and more advanced than beginner projects."
+      },
+
+      {
+        "type": "real_life",
+        "text": "Beginner projects are like learning bicycle riding, while intermediate projects are like driving real vehicles in traffic."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "These projects improve confidence, logic building, debugging, and software design skills."
+      },
+
+      {
+        "type": "technical",
+        "text": "Intermediate applications integrate OOP, file handling, collections, algorithms, and structured program design."
+      },
+
+      {
+        "type": "deep",
+        "text": "Intermediate projects simulate production-style development by combining modular architecture, reusable logic, persistent storage, and user interaction systems."
+      }
+    ],
+
+    "project_benefits": [
+      {
+        "title": "Advanced Logic",
+        "explanation": "Projects improve problem-solving depth."
+      },
+
+      {
+        "title": "Architecture Thinking",
+        "explanation": "Programs become structured into modules and systems."
+      },
+
+      {
+        "title": "Real Development Skills",
+        "explanation": "Projects simulate real software engineering."
+      },
+
+      {
+        "title": "Portfolio Quality",
+        "explanation": "Intermediate projects are strong resume projects."
+      },
+
+      {
+        "title": "Interview Preparation",
+        "explanation": "Projects improve coding discussion ability."
+      }
+    ],
+
+    "projects": [
+
+      {
+        "name": "Bank Management System",
+
+        "difficulty": "Intermediate",
+
+        "concepts_used": [
+          "OOP",
+          "Arrays",
+          "Methods",
+          "File Handling",
+          "User Input"
+        ],
+
+        "project_goal": "Manage bank accounts, balances, and transactions.",
+
+        "features": [
+          "Create account",
+          "Deposit money",
+          "Withdraw money",
+          "Check balance",
+          "Save account data"
+        ],
+
+        "real_life": "Used in banking systems.",
+
+        "step_by_step": [
+          "Create Account class",
+          "Store customer details",
+          "Add transaction methods",
+          "Save account data into files"
+        ]
+      },
+
+      {
+        "name": "Library Management System",
+
+        "difficulty": "Intermediate",
+
+        "concepts_used": [
+          "OOP",
+          "Arrays",
+          "Loops",
+          "Conditions"
+        ],
+
+        "project_goal": "Manage books, students, and borrowing system.",
+
+        "features": [
+          "Add books",
+          "Search books",
+          "Issue books",
+          "Return books"
+        ],
+
+        "real_life": "Used in schools and libraries.",
+
+        "step_by_step": [
+          "Create Book class",
+          "Store book details",
+          "Track issued books",
+          "Manage returns"
+        ]
+      },
+
+      {
+        "name": "Employee Management System",
+
+        "difficulty": "Intermediate",
+
+        "concepts_used": [
+          "OOP",
+          "Methods",
+          "Arrays",
+          "File Handling"
+        ],
+
+        "project_goal": "Store and manage employee records.",
+
+        "features": [
+          "Add employees",
+          "Update employee details",
+          "Delete employee",
+          "Search employee"
+        ],
+
+        "real_life": "Used in companies and HR systems.",
+
+        "step_by_step": [
+          "Create Employee class",
+          "Store employee records",
+          "Update data",
+          "Save records into files"
+        ]
+      },
+
+      {
+        "name": "Chat Application",
+
+        "difficulty": "Intermediate",
+
+        "concepts_used": [
+          "Strings",
+          "File Handling",
+          "Loops",
+          "Methods"
+        ],
+
+        "project_goal": "Build a console-based messaging system.",
+
+        "features": [
+          "Send messages",
+          "Store chats",
+          "Read previous chats",
+          "User profiles"
+        ],
+
+        "real_life": "Used in messaging platforms.",
+
+        "step_by_step": [
+          "Take user messages",
+          "Store messages in files",
+          "Display chat history",
+          "Handle multiple users"
+        ]
+      },
+
+      {
+        "name": "Expense Tracker",
+
+        "difficulty": "Intermediate",
+
+        "concepts_used": [
+          "Arrays",
+          "OOP",
+          "File Handling",
+          "Calculations"
+        ],
+
+        "project_goal": "Track user expenses and savings.",
+
+        "features": [
+          "Add expenses",
+          "Calculate totals",
+          "View reports",
+          "Save expense history"
+        ],
+
+        "real_life": "Used in finance applications.",
+
+        "step_by_step": [
+          "Store expense data",
+          "Calculate spending",
+          "Generate reports",
+          "Save records"
+        ]
+      }
+    ],
+
+    "architecture_understanding": [
+      {
+        "title": "Modules",
+        "explanation": "Large projects are divided into smaller parts."
+      },
+
+      {
+        "title": "Reusable Code",
+        "explanation": "Methods and classes prevent repeated code."
+      },
+
+      {
+        "title": "Persistent Storage",
+        "explanation": "Files store permanent project data."
+      },
+
+      {
+        "title": "User Interaction",
+        "explanation": "Programs respond dynamically to user input."
+      },
+
+      {
+        "title": "Debugging",
+        "explanation": "Larger projects require systematic debugging."
+      }
+    ],
+
+    "common_mistakes": [
+      "Making everything inside one class",
+      "Not planning project structure",
+      "Ignoring reusable methods",
+      "Poor naming conventions",
+      "Skipping debugging and testing"
+    ],
+
+    "practice": [
+      "Build bank management system.",
+      "Create library management app.",
+      "Build employee record system.",
+      "Create expense tracker.",
+      "Develop chat application.",
+      "Add file storage to projects."
+    ],
+
+    "quiz": [
+      {
+        "question": "Why are intermediate projects important?",
+        "answer": "They improve real development skills"
+      },
+
+      {
+        "question": "Which project manages books?",
+        "answer": "Library Management System"
+      },
+
+      {
+        "question": "Which project tracks money?",
+        "answer": "Expense Tracker"
+      },
+
+      {
+        "question": "Which concept helps organize code?",
+        "answer": "OOP"
+      },
+
+      {
+        "question": "Why is file handling important in projects?",
+        "answer": "To save permanent data"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Smart College Management System",
+      "task": "Build a system that manages students, teachers, attendance, marks, and file storage using OOP and file handling."
+    },
+
+    "revision_summary": [
+      "Intermediate projects combine multiple concepts.",
+      "Projects improve software design thinking.",
+      "OOP helps organize large applications.",
+      "File handling stores permanent data.",
+      "Reusable methods improve code quality.",
+      "Projects simulate real-world development."
+    ]
+  }
+}
