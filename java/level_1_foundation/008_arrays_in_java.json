@@ -1,0 +1,312 @@
+{
+  "id": "java_foundation_008",
+  "title": "Arrays in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 55,
+
+  "content": {
+    "topic_intro": "Arrays are used to store multiple values of the same datatype in a single variable.",
+
+    "why_learn_this": "Without arrays, programmers would need hundreds of separate variables to store large amounts of data.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "An array stores multiple values together."
+      },
+
+      {
+        "type": "real_life",
+        "text": "An array is like a row of lockers where each locker stores one item."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "Instead of creating marks1, marks2, marks3, arrays help store all marks in one place."
+      },
+
+      {
+        "type": "technical",
+        "text": "Arrays are fixed-size data structures storing elements of the same datatype in contiguous memory locations."
+      },
+
+      {
+        "type": "deep",
+        "text": "Arrays provide indexed access to sequentially stored homogeneous data, enabling efficient storage and retrieval operations."
+      }
+    ],
+
+    "basic_terms": {
+      "array": "A collection of multiple values.",
+      "index": "Position number of element.",
+      "element": "A value stored inside array.",
+      "length": "Total number of elements.",
+
+      "example": "int[] marks = {90, 85, 95};",
+
+      "breakdown": [
+        "int[] means integer array",
+        "marks is array name",
+        "{90,85,95} are stored values",
+        "Indexes start from 0"
+      ]
+    },
+
+    "array_creation": {
+
+      "method_1": {
+        "title": "Direct Initialization",
+
+        "code": "int[] marks = {90, 85, 95};",
+
+        "step_by_step": [
+          "Array datatype is int[]",
+          "marks becomes array name",
+          "3 values are stored"
+        ],
+
+        "output": "marks array contains 90, 85, 95"
+      },
+
+      "method_2": {
+        "title": "Using new Keyword",
+
+        "code": "int[] numbers = new int[5];",
+
+        "step_by_step": [
+          "new creates array object",
+          "Array size becomes 5",
+          "Indexes go from 0 to 4"
+        ],
+
+        "output": "Empty array with 5 positions created"
+      }
+    },
+
+    "array_examples": [
+
+      {
+        "type": "student_marks",
+
+        "code": "int[] marks = {90, 85, 95};",
+
+        "output": "90 85 95",
+
+        "step_by_step": [
+          "marks array stores 3 values",
+          "Each value has index",
+          "marks[0] = 90",
+          "marks[1] = 85",
+          "marks[2] = 95"
+        ],
+
+        "real_life": "School marks system."
+      },
+
+      {
+        "type": "gaming_scores",
+
+        "code": "int[] scores = {100, 200, 150, 300};",
+
+        "output": "100 200 150 300",
+
+        "step_by_step": [
+          "scores array stores game points",
+          "Each player score has separate index"
+        ],
+
+        "real_life": "Gaming leaderboard."
+      },
+
+      {
+        "type": "shopping_prices",
+
+        "code": "double[] prices = {99.99, 150.50, 75.25};",
+
+        "output": "99.99 150.50 75.25",
+
+        "step_by_step": [
+          "double[] stores decimal values",
+          "prices array stores product prices"
+        ],
+
+        "real_life": "Shopping applications."
+      },
+
+      {
+        "type": "names_list",
+
+        "code": "String[] names = {\"John\", \"Alex\", \"Sam\"};",
+
+        "output": "John Alex Sam",
+
+        "step_by_step": [
+          "String[] stores text values",
+          "names array stores multiple names"
+        ],
+
+        "real_life": "Contact list apps."
+      },
+
+      {
+        "type": "attendance_system",
+
+        "code": "boolean[] attendance = {true, false, true};",
+
+        "output": "true false true",
+
+        "step_by_step": [
+          "boolean[] stores true/false values",
+          "Tracks attendance status"
+        ],
+
+        "real_life": "School attendance systems."
+      }
+    ],
+
+    "accessing_elements": {
+
+      "title": "Accessing Array Elements",
+
+      "example": {
+        "code": "int[] marks = {90, 85, 95};\n\nSystem.out.println(marks[0]);",
+
+        "output": "90"
+      },
+
+      "step_by_step": [
+        "marks[0] accesses first element",
+        "Index always starts from 0",
+        "First value 90 gets printed"
+      ]
+    },
+
+    "changing_values": {
+
+      "title": "Updating Array Values",
+
+      "example": {
+        "code": "marks[1] = 100;",
+
+        "output": "Second element becomes 100"
+      },
+
+      "step_by_step": [
+        "marks[1] accesses second element",
+        "85 is replaced with 100"
+      ]
+    },
+
+    "array_length": {
+
+      "title": "Finding Array Length",
+
+      "example": {
+        "code": "System.out.println(marks.length);",
+
+        "output": "3"
+      },
+
+      "explanation": "length gives total number of elements."
+    },
+
+    "loops_with_arrays": {
+
+      "title": "Using Loop with Array",
+
+      "example": {
+        "code": "int[] marks = {90, 85, 95};\n\nfor(int i = 0; i < marks.length; i++) {\n    System.out.println(marks[i]);\n}",
+
+        "output": [
+          "90",
+          "85",
+          "95"
+        ]
+      },
+
+      "step_by_step": [
+        "Loop starts from index 0",
+        "Loop continues until last index",
+        "Each array value is printed"
+      ]
+    },
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "int[] marks = 90, 85, 95;",
+        "correct": "int[] marks = {90, 85, 95};",
+        "why_wrong": "Arrays require curly braces."
+      },
+
+      {
+        "wrong": "marks[3]",
+        "correct": "marks[2]",
+        "why_wrong": "Indexes start from 0. Last index is size - 1."
+      },
+
+      {
+        "wrong": "marks.length()",
+        "correct": "marks.length",
+        "why_wrong": "length in arrays is property, not method."
+      }
+    ],
+
+    "common_mistakes": [
+      "Forgetting indexes start at 0",
+      "Accessing invalid index",
+      "Using wrong array syntax",
+      "Confusing length and length()",
+      "Storing different datatypes together"
+    ],
+
+    "practice": [
+      "Create int array of 5 numbers.",
+      "Print first and last element.",
+      "Find array length.",
+      "Update array value.",
+      "Use loop to print all elements.",
+      "Create student marks system using arrays."
+    ],
+
+    "quiz": [
+      {
+        "question": "What does an array store?",
+        "answer": "Multiple values"
+      },
+
+      {
+        "question": "What is first array index?",
+        "answer": "0"
+      },
+
+      {
+        "question": "Which property gives array size?",
+        "answer": "length"
+      },
+
+      {
+        "question": "Can arrays store same datatype only?",
+        "answer": "Yes"
+      },
+
+      {
+        "question": "Which loop is commonly used with arrays?",
+        "answer": "for loop"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Student Marks Analyzer",
+      "task": "Store 5 student marks in array, print all marks, find total marks, highest mark, and average."
+    },
+
+    "revision_summary": [
+      "Arrays store multiple values together.",
+      "Indexes start from 0.",
+      "Arrays store same datatype values.",
+      "length gives array size.",
+      "Loops help traverse arrays.",
+      "Arrays simplify large data storage."
+    ]
+  }
+}
