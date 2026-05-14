@@ -1,0 +1,287 @@
+{
+  "id": "java_foundation_005",
+  "title": "User Input in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 40,
+
+  "content": {
+    "topic_intro": "User input allows programs to take data from users during execution.",
+
+    "why_learn_this": "Without user input, programs cannot interact with users. Real apps need names, passwords, messages, search queries, and many other inputs.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "User input means taking data from the user."
+      },
+
+      {
+        "type": "real_life",
+        "text": "Whenever an app asks for your name, password, or age, it is taking user input."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "Input makes programs interactive instead of fixed."
+      },
+
+      {
+        "type": "technical",
+        "text": "Java uses the Scanner class to read data from keyboard input."
+      },
+
+      {
+        "type": "deep",
+        "text": "User input systems allow dynamic runtime interaction between users and software applications by capturing external data streams."
+      }
+    ],
+
+    "basic_terms": {
+      "Scanner": "Java class used for taking input.",
+      "System.in": "Represents keyboard input stream.",
+      "nextInt()": "Reads integer input.",
+      "nextLine()": "Reads full text input.",
+
+      "example": "Scanner sc = new Scanner(System.in);",
+
+      "breakdown": [
+        "Scanner creates input object",
+        "sc is object name",
+        "new creates object",
+        "System.in connects keyboard input"
+      ]
+    },
+
+    "setup": {
+      "title": "Import Scanner",
+
+      "code": "import java.util.Scanner;",
+
+      "explanation": "Scanner class must be imported before use."
+    },
+
+    "basic_input_program": {
+      "title": "Simple User Input Program",
+
+      "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        Scanner sc = new Scanner(System.in);\n\n        System.out.println(\"Enter your name:\");\n\n        String name = sc.nextLine();\n\n        System.out.println(\"Hello \" + name);\n    }\n}",
+
+      "step_by_step": [
+        "Scanner object is created",
+        "Program asks for name",
+        "User types name",
+        "nextLine() stores text input",
+        "Program prints greeting"
+      ],
+
+      "output_example": [
+        "Enter your name:",
+        "John",
+        "Hello John"
+      ]
+    },
+
+    "input_types": [
+
+      {
+        "datatype": "String Input",
+
+        "examples": [
+          {
+            "type": "name_input",
+            "code": "String name = sc.nextLine();",
+            "explanation": "Reads full text input."
+          },
+
+          {
+            "type": "city_input",
+            "code": "String city = sc.nextLine();",
+            "explanation": "Reads city name."
+          },
+
+          {
+            "type": "message_input",
+            "code": "String message = sc.nextLine();",
+            "explanation": "Reads user message."
+          },
+
+          {
+            "type": "app_input",
+            "code": "String app = sc.nextLine();",
+            "explanation": "Reads app name."
+          },
+
+          {
+            "type": "bio_input",
+            "code": "String bio = sc.nextLine();",
+            "explanation": "Reads user biography."
+          }
+        ]
+      },
+
+      {
+        "datatype": "Integer Input",
+
+        "examples": [
+          {
+            "type": "age_input",
+            "code": "int age = sc.nextInt();",
+            "explanation": "Reads integer input."
+          },
+
+          {
+            "type": "marks_input",
+            "code": "int marks = sc.nextInt();",
+            "explanation": "Reads student marks."
+          },
+
+          {
+            "type": "score_input",
+            "code": "int score = sc.nextInt();",
+            "explanation": "Reads game score."
+          },
+
+          {
+            "type": "quantity_input",
+            "code": "int quantity = sc.nextInt();",
+            "explanation": "Reads quantity value."
+          },
+
+          {
+            "type": "year_input",
+            "code": "int year = sc.nextInt();",
+            "explanation": "Reads year number."
+          }
+        ]
+      },
+
+      {
+        "datatype": "Double Input",
+
+        "examples": [
+          {
+            "type": "price_input",
+            "code": "double price = sc.nextDouble();",
+            "explanation": "Reads decimal value."
+          },
+
+          {
+            "type": "weight_input",
+            "code": "double weight = sc.nextDouble();",
+            "explanation": "Reads weight input."
+          },
+
+          {
+            "type": "temperature_input",
+            "code": "double temp = sc.nextDouble();",
+            "explanation": "Reads temperature value."
+          },
+
+          {
+            "type": "percentage_input",
+            "code": "double percentage = sc.nextDouble();",
+            "explanation": "Reads percentage."
+          },
+
+          {
+            "type": "salary_input",
+            "code": "double salary = sc.nextDouble();",
+            "explanation": "Reads salary value."
+          }
+        ]
+      }
+    ],
+
+    "important_note": {
+      "title": "Difference Between next() and nextLine()",
+
+      "next()": "Reads only one word.",
+      "nextLine()": "Reads full sentence including spaces.",
+
+      "example": {
+        "code": "String name = sc.next();",
+        "output": "John",
+
+        "code2": "String fullName = sc.nextLine();",
+        "output2": "John Doe"
+      }
+    },
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "Scanner sc = Scanner(System.in);",
+        "correct": "Scanner sc = new Scanner(System.in);",
+        "why_wrong": "new keyword is required to create object."
+      },
+
+      {
+        "wrong": "int age = sc.nextLine();",
+        "correct": "int age = sc.nextInt();",
+        "why_wrong": "nextLine() returns String, not int."
+      },
+
+      {
+        "wrong": "String name = sc.nextInt();",
+        "correct": "String name = sc.nextLine();",
+        "why_wrong": "nextInt() reads integer only."
+      }
+    ],
+
+    "common_mistakes": [
+      "Forgetting import statement",
+      "Using wrong Scanner method",
+      "Forgetting new keyword",
+      "Confusing next() and nextLine()",
+      "Using wrong datatype for input"
+    ],
+
+    "practice": [
+      "Take user name input.",
+      "Take user age input.",
+      "Take user city input.",
+      "Take product price input.",
+      "Build student information form.",
+      "Create login input system."
+    ],
+
+    "quiz": [
+      {
+        "question": "Which class is used for input?",
+        "answer": "Scanner"
+      },
+
+      {
+        "question": "Which method reads integer?",
+        "answer": "nextInt()"
+      },
+
+      {
+        "question": "Which method reads full sentence?",
+        "answer": "nextLine()"
+      },
+
+      {
+        "question": "What does System.in represent?",
+        "answer": "Keyboard input"
+      },
+
+      {
+        "question": "Is import required for Scanner?",
+        "answer": "Yes"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Student Registration Form",
+      "task": "Take user name, age, city, marks, and percentage as input and display all information."
+    },
+
+    "revision_summary": [
+      "Scanner is used for user input.",
+      "System.in connects keyboard input.",
+      "nextInt() reads integers.",
+      "nextDouble() reads decimal values.",
+      "nextLine() reads full text.",
+      "Input makes programs interactive."
+    ]
+  }
+}
