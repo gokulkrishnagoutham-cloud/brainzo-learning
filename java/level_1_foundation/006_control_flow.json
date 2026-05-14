@@ -1,0 +1,372 @@
+{
+  "id": "java_foundation_006",
+  "title": "Control Flow in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 50,
+
+  "content": {
+    "topic_intro": "Control flow decides how a program executes different blocks of code.",
+
+    "why_learn_this": "Without control flow, programs would execute everything in a straight line and could never make decisions.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "Control flow controls which code runs and when."
+      },
+
+      {
+        "type": "real_life",
+        "text": "Control flow is like traffic signals. Different situations decide what happens next."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "Programs use control flow to make decisions like login success, exam pass/fail, and game conditions."
+      },
+
+      {
+        "type": "technical",
+        "text": "Control flow uses conditions and loops to alter execution order in programs."
+      },
+
+      {
+        "type": "deep",
+        "text": "Control flow structures manage logical execution paths, enabling dynamic runtime behavior and decision-based programming."
+      }
+    ],
+
+    "basic_terms": {
+      "condition": "An expression that becomes true or false.",
+      "if_statement": "Runs code only if condition is true.",
+      "else_statement": "Runs code if condition is false.",
+      "loop": "Repeats code multiple times.",
+
+      "example": "if(age >= 18)",
+
+      "breakdown": [
+        "if checks condition",
+        "age >= 18 is condition",
+        "Program decides based on result"
+      ]
+    },
+
+    "control_flow_types": [
+
+      {
+        "name": "if Statement",
+
+        "purpose": "Runs code only if condition is true.",
+
+        "examples": [
+          {
+            "type": "age_check",
+            "code": "int age = 20;\n\nif(age >= 18) {\n    System.out.println(\"Adult\");\n}",
+
+            "output": "Adult",
+
+            "step_by_step": [
+              "age stores 20",
+              "condition checks if age is greater than or equal to 18",
+              "condition becomes true",
+              "Adult is printed"
+            ],
+
+            "real_life": "Checking voting eligibility."
+          },
+
+          {
+            "type": "marks_check",
+            "code": "int marks = 90;\n\nif(marks > 50) {\n    System.out.println(\"Passed\");\n}",
+
+            "output": "Passed",
+
+            "step_by_step": [
+              "marks stores 90",
+              "condition checks if marks are above 50",
+              "condition becomes true",
+              "Passed is printed"
+            ],
+
+            "real_life": "School result system."
+          },
+
+          {
+            "type": "gaming",
+            "code": "int health = 100;\n\nif(health > 0) {\n    System.out.println(\"Player Alive\");\n}",
+
+            "output": "Player Alive",
+
+            "step_by_step": [
+              "health stores player health",
+              "condition checks if player is alive"
+            ],
+
+            "real_life": "Game health system."
+          },
+
+          {
+            "type": "shopping",
+            "code": "double amount = 1000;\n\nif(amount > 500) {\n    System.out.println(\"Discount Applied\");\n}",
+
+            "output": "Discount Applied",
+
+            "step_by_step": [
+              "amount stores shopping total",
+              "condition checks discount eligibility"
+            ],
+
+            "real_life": "E-commerce discount systems."
+          },
+
+          {
+            "type": "login",
+            "code": "boolean isLoggedIn = true;\n\nif(isLoggedIn) {\n    System.out.println(\"Welcome User\");\n}",
+
+            "output": "Welcome User",
+
+            "step_by_step": [
+              "boolean value is checked",
+              "true allows login"
+            ],
+
+            "real_life": "Authentication systems."
+          }
+        ]
+      },
+
+      {
+        "name": "if else Statement",
+
+        "purpose": "Runs one block if true and another block if false.",
+
+        "examples": [
+          {
+            "type": "pass_fail",
+            "code": "int marks = 40;\n\nif(marks >= 50) {\n    System.out.println(\"Pass\");\n} else {\n    System.out.println(\"Fail\");\n}",
+
+            "output": "Fail",
+
+            "step_by_step": [
+              "marks stores 40",
+              "condition becomes false",
+              "else block runs"
+            ],
+
+            "real_life": "Exam result systems."
+          },
+
+          {
+            "type": "even_odd",
+            "code": "int number = 7;\n\nif(number % 2 == 0) {\n    System.out.println(\"Even\");\n} else {\n    System.out.println(\"Odd\");\n}",
+
+            "output": "Odd",
+
+            "step_by_step": [
+              "% checks remainder",
+              "7 % 2 becomes 1",
+              "condition becomes false",
+              "Odd is printed"
+            ],
+
+            "real_life": "Math calculations."
+          },
+
+          {
+            "type": "login_system",
+            "code": "boolean passwordCorrect = false;\n\nif(passwordCorrect) {\n    System.out.println(\"Login Success\");\n} else {\n    System.out.println(\"Wrong Password\");\n}",
+
+            "output": "Wrong Password",
+
+            "step_by_step": [
+              "passwordCorrect is false",
+              "else block executes"
+            ],
+
+            "real_life": "App login systems."
+          },
+
+          {
+            "type": "battery_check",
+            "code": "int battery = 15;\n\nif(battery > 20) {\n    System.out.println(\"Battery OK\");\n} else {\n    System.out.println(\"Charge Phone\");\n}",
+
+            "output": "Charge Phone",
+
+            "step_by_step": [
+              "battery is below 20",
+              "else block runs"
+            ],
+
+            "real_life": "Mobile battery systems."
+          },
+
+          {
+            "type": "subscription",
+            "code": "boolean isPremium = true;\n\nif(isPremium) {\n    System.out.println(\"Premium Access\");\n} else {\n    System.out.println(\"Free Access\");\n}",
+
+            "output": "Premium Access",
+
+            "step_by_step": [
+              "isPremium becomes true",
+              "premium block runs"
+            ],
+
+            "real_life": "Subscription apps."
+          }
+        ]
+      },
+
+      {
+        "name": "else if Ladder",
+
+        "purpose": "Checks multiple conditions.",
+
+        "examples": [
+          {
+            "type": "grade_system",
+            "code": "int marks = 85;\n\nif(marks >= 90) {\n    System.out.println(\"A Grade\");\n} else if(marks >= 75) {\n    System.out.println(\"B Grade\");\n} else {\n    System.out.println(\"C Grade\");\n}",
+
+            "output": "B Grade",
+
+            "step_by_step": [
+              "marks are below 90",
+              "second condition becomes true",
+              "B Grade is printed"
+            ],
+
+            "real_life": "School grading systems."
+          },
+
+          {
+            "type": "weather_system",
+            "code": "int temperature = 35;\n\nif(temperature > 40) {\n    System.out.println(\"Very Hot\");\n} else if(temperature > 30) {\n    System.out.println(\"Hot\");\n} else {\n    System.out.println(\"Normal\");\n}",
+
+            "output": "Hot",
+
+            "step_by_step": [
+              "temperature is 35",
+              "second condition becomes true"
+            ],
+
+            "real_life": "Weather apps."
+          }
+        ]
+      },
+
+      {
+        "name": "switch Statement",
+
+        "purpose": "Checks multiple fixed cases.",
+
+        "examples": [
+          {
+            "type": "day_system",
+            "code": "int day = 2;\n\nswitch(day) {\n    case 1:\n        System.out.println(\"Monday\");\n        break;\n    case 2:\n        System.out.println(\"Tuesday\");\n        break;\n    default:\n        System.out.println(\"Invalid Day\");\n}",
+
+            "output": "Tuesday",
+
+            "step_by_step": [
+              "day stores 2",
+              "case 2 matches",
+              "Tuesday is printed"
+            ],
+
+            "real_life": "Calendar systems."
+          },
+
+          {
+            "type": "menu_system",
+            "code": "int choice = 1;\n\nswitch(choice) {\n    case 1:\n        System.out.println(\"Start Game\");\n        break;\n    case 2:\n        System.out.println(\"Settings\");\n        break;\n}",
+
+            "output": "Start Game",
+
+            "step_by_step": [
+              "choice becomes 1",
+              "first case executes"
+            ],
+
+            "real_life": "Game menus."
+          }
+        ]
+      }
+    ],
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "if(age = 18)",
+        "correct": "if(age == 18)",
+        "why_wrong": "= assigns value, == compares value."
+      },
+
+      {
+        "wrong": "if(age > 18)\nSystem.out.println(\"Adult\")",
+        "correct": "if(age > 18) {\n    System.out.println(\"Adult\");\n}",
+        "why_wrong": "Curly braces improve clarity and avoid mistakes."
+      },
+
+      {
+        "wrong": "switch(day)\ncase 1:",
+        "correct": "switch(day) {\n    case 1:\n}",
+        "why_wrong": "switch needs curly braces."
+      }
+    ],
+
+    "common_mistakes": [
+      "Using = instead of ==",
+      "Forgetting curly braces",
+      "Missing break in switch",
+      "Wrong logical conditions",
+      "Incorrect else placement"
+    ],
+
+    "practice": [
+      "Check if user is adult.",
+      "Build pass/fail system.",
+      "Check even or odd number.",
+      "Create grade calculator.",
+      "Build simple menu system.",
+      "Create weather temperature checker."
+    ],
+
+    "quiz": [
+      {
+        "question": "Which statement checks condition?",
+        "answer": "if"
+      },
+
+      {
+        "question": "Which block runs when condition is false?",
+        "answer": "else"
+      },
+
+      {
+        "question": "Which statement handles multiple fixed cases?",
+        "answer": "switch"
+      },
+
+      {
+        "question": "Which operator compares values?",
+        "answer": "=="
+      },
+
+      {
+        "question": "What repeats code multiple times?",
+        "answer": "loop"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Student Result System",
+      "task": "Take marks input and print grade, pass/fail status, and remarks using control flow statements."
+    },
+
+    "revision_summary": [
+      "Control flow controls program execution.",
+      "if checks conditions.",
+      "else runs when condition is false.",
+      "else if handles multiple conditions.",
+      "switch handles fixed choices.",
+      "Conditions return true or false."
+    ]
+  }
+}
