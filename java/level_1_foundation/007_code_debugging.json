@@ -1,0 +1,334 @@
+{
+  "id": "java_foundation_007",
+  "title": "Code Debugging in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 45,
+
+  "content": {
+    "topic_intro": "Debugging means finding and fixing errors in programs.",
+
+    "why_learn_this": "Every programmer makes mistakes. Debugging helps identify problems and make programs work correctly.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "text": "Debugging means fixing errors in code."
+      },
+
+      {
+        "type": "real_life",
+        "text": "Debugging is like repairing a broken machine by finding which part is causing the problem."
+      },
+
+      {
+        "type": "student_friendly",
+        "text": "When your code does not work, debugging helps you understand why."
+      },
+
+      {
+        "type": "technical",
+        "text": "Debugging is the process of analyzing, locating, and resolving software errors."
+      },
+
+      {
+        "type": "deep",
+        "text": "Debugging involves tracing execution flow, identifying logical or syntax failures, and correcting runtime behavior."
+      }
+    ],
+
+    "basic_terms": {
+      "bug": "An error or problem in code.",
+      "debugging": "The process of fixing bugs.",
+      "syntax_error": "Wrong Java syntax.",
+      "runtime_error": "Error occurring while program runs.",
+      "logical_error": "Program runs but gives wrong output.",
+
+      "example": "int age = ;",
+
+      "breakdown": [
+        "Variable declaration is incomplete",
+        "Java expects a value after =",
+        "Compiler throws syntax error"
+      ]
+    },
+
+    "error_types": [
+
+      {
+        "name": "Syntax Errors",
+
+        "purpose": "Errors caused by incorrect Java syntax.",
+
+        "examples": [
+          {
+            "wrong_code": "int age = ;",
+
+            "correct_code": "int age = 20;",
+
+            "why_wrong": "Value is missing after assignment operator.",
+
+            "step_by_step": [
+              "Java expects a value",
+              "No value is provided",
+              "Compiler shows error"
+            ]
+          },
+
+          {
+            "wrong_code": "System.out.println(\"Hello\")",
+
+            "correct_code": "System.out.println(\"Hello\");",
+
+            "why_wrong": "Semicolon is missing.",
+
+            "step_by_step": [
+              "Java statements end with ;",
+              "Missing semicolon causes syntax error"
+            ]
+          },
+
+          {
+            "wrong_code": "String name = 'John';",
+
+            "correct_code": "String name = \"John\";",
+
+            "why_wrong": "Strings use double quotes.",
+
+            "step_by_step": [
+              "Single quotes are for char",
+              "String requires double quotes"
+            ]
+          },
+
+          {
+            "wrong_code": "if(age = 18)",
+
+            "correct_code": "if(age == 18)",
+
+            "why_wrong": "= assigns value, == compares values.",
+
+            "step_by_step": [
+              "Java expects comparison",
+              "Single = changes value instead"
+            ]
+          },
+
+          {
+            "wrong_code": "public clas Main",
+
+            "correct_code": "public class Main",
+
+            "why_wrong": "class keyword spelling is incorrect.",
+
+            "step_by_step": [
+              "Java keywords must be exact",
+              "clas is invalid"
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Runtime Errors",
+
+        "purpose": "Errors occurring during execution.",
+
+        "examples": [
+          {
+            "wrong_code": "int result = 10 / 0;",
+
+            "correct_code": "int result = 10 / 2;",
+
+            "why_wrong": "Division by zero is impossible.",
+
+            "step_by_step": [
+              "Program starts correctly",
+              "Division by zero occurs",
+              "Program crashes"
+            ]
+          },
+
+          {
+            "wrong_code": "String name = null;\nSystem.out.println(name.length());",
+
+            "correct_code": "String name = \"John\";\nSystem.out.println(name.length());",
+
+            "why_wrong": "null has no value to access.",
+
+            "step_by_step": [
+              "name contains null",
+              "length() tries to access missing value",
+              "NullPointerException occurs"
+            ]
+          },
+
+          {
+            "wrong_code": "int[] arr = new int[3];\nSystem.out.println(arr[5]);",
+
+            "correct_code": "System.out.println(arr[2]);",
+
+            "why_wrong": "Array index exceeds size.",
+
+            "step_by_step": [
+              "Array size is 3",
+              "Valid indexes are 0,1,2",
+              "Index 5 causes error"
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Logical Errors",
+
+        "purpose": "Program runs but gives wrong output.",
+
+        "examples": [
+          {
+            "wrong_code": "int total = 10 - 5;",
+
+            "correct_code": "int total = 10 + 5;",
+
+            "why_wrong": "Wrong operator used.",
+
+            "step_by_step": [
+              "Program runs successfully",
+              "Logic is incorrect",
+              "Wrong answer is produced"
+            ]
+          },
+
+          {
+            "wrong_code": "if(age > 18)",
+
+            "correct_code": "if(age >= 18)",
+
+            "why_wrong": "18 should also be included.",
+
+            "step_by_step": [
+              "Condition misses exact value 18",
+              "Logic becomes incorrect"
+            ]
+          },
+
+          {
+            "wrong_code": "double average = total / count;",
+
+            "correct_code": "double average = (double) total / count;",
+
+            "why_wrong": "Integer division removes decimal values.",
+
+            "step_by_step": [
+              "Both numbers are int",
+              "Decimal part is lost",
+              "Wrong average appears"
+            ]
+          }
+        ]
+      }
+    ],
+
+    "debugging_methods": [
+
+      {
+        "method": "Reading Error Messages",
+
+        "explanation": "Java error messages tell what went wrong and where.",
+
+        "example": "Exception in thread \"main\" java.lang.ArithmeticException: / by zero"
+      },
+
+      {
+        "method": "Using print statements",
+
+        "explanation": "Print variable values to check program flow.",
+
+        "example": "System.out.println(age);"
+      },
+
+      {
+        "method": "Checking logic step by step",
+
+        "explanation": "Analyze program execution line by line."
+      },
+
+      {
+        "method": "Using IDE debugging tools",
+
+        "explanation": "Modern IDEs help track variable values and execution."
+      },
+
+      {
+        "method": "Testing small parts",
+
+        "explanation": "Debug one section at a time instead of entire program."
+      }
+    ],
+
+    "real_world_debugging": [
+      "Fixing login failures",
+      "Correcting payment calculations",
+      "Repairing game crashes",
+      "Fixing app navigation bugs",
+      "Resolving server-side issues"
+    ],
+
+    "common_mistakes": [
+      "Ignoring error messages",
+      "Changing too many things at once",
+      "Not checking variable values",
+      "Using wrong operators",
+      "Forgetting null checks"
+    ],
+
+    "practice": [
+      "Fix missing semicolon errors.",
+      "Fix String quote errors.",
+      "Fix if condition mistakes.",
+      "Debug division by zero.",
+      "Fix array index errors.",
+      "Correct logical mistakes."
+    ],
+
+    "quiz": [
+      {
+        "question": "What is a bug?",
+        "answer": "An error in code"
+      },
+
+      {
+        "question": "Which error happens during execution?",
+        "answer": "Runtime error"
+      },
+
+      {
+        "question": "Which error gives wrong output but no crash?",
+        "answer": "Logical error"
+      },
+
+      {
+        "question": "Which tool prints values for debugging?",
+        "answer": "System.out.println()"
+      },
+
+      {
+        "question": "What process fixes bugs?",
+        "answer": "Debugging"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Bug Fix Challenge",
+      "task": "Create a Java file with 10 intentional mistakes and fix all syntax, runtime, and logical errors."
+    },
+
+    "revision_summary": [
+      "Debugging fixes program errors.",
+      "Syntax errors break Java rules.",
+      "Runtime errors happen during execution.",
+      "Logical errors give wrong output.",
+      "Error messages help identify problems.",
+      "Print statements help trace execution."
+    ]
+  }
+}
