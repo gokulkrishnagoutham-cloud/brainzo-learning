@@ -1,0 +1,42 @@
+{
+  "id": "java_foundation_001",
+  "title": "Getting Started with Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 10,
+  "content": {
+    "intro": "Java is one of the most popular programming languages in the world.",
+    "why_learn_java": [
+      "Used for Android development",
+      "Used in backend systems",
+      "Used in enterprise applications",
+      "Cross-platform support using JVM"
+    ],
+    "what_is_jvm": "JVM stands for Java Virtual Machine. It allows Java code to run on different operating systems.",
+    "first_program": {
+      "title": "Hello World",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello Java\");\n  }\n}"
+    },
+    "explanation": [
+      "public class Main creates a class",
+      "main() is the entry point of Java program",
+      "System.out.println() prints text"
+    ],
+    "practice": [
+      "Install Java JDK",
+      "Install IntelliJ IDEA",
+      "Run Hello World program",
+      "Change output text"
+    ],
+    "quiz": [
+      {
+        "question": "What does JVM stand for?",
+        "answer": "Java Virtual Machine"
+      },
+      {
+        "question": "Which function prints text?",
+        "answer": "System.out.println()"
+      }
+    ],
+    "summary": "Java is powerful, platform-independent, and widely used in real-world software development."
+  }
+}
