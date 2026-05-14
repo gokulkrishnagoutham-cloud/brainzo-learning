@@ -1,225 +1,455 @@
 {
-  "id": "java_foundation_variables",
-  "title": "Variables in Java",
+  "id": "java_foundation_002",
+  "title": "Variables and Datatypes",
   "difficulty": "Beginner",
-  "estimatedMinutes": 20,
+  "estimatedMinutes": 35,
 
   "content": {
     "topic_intro": "Variables are used to store data in Java programs.",
 
+    "why_learn_this": "Without variables, programs cannot remember names, scores, prices, ages, login states, or any information.",
+
     "explanations": [
       {
         "type": "simple",
-        "title": "Simple Explanation",
-        "text": "A variable is a container used to store information."
+        "text": "A variable is a container used to store data."
       },
 
       {
         "type": "real_life",
-        "title": "Real Life Explanation",
         "text": "A variable is like a labeled bottle. The label tells what is inside, and the bottle stores the value."
       },
 
       {
         "type": "student_friendly",
-        "title": "Student Friendly Explanation",
-        "text": "Variables help programs remember things like names, marks, scores, and prices."
+        "text": "Variables help programs remember information like marks, names, and scores."
       },
 
       {
         "type": "technical",
-        "title": "Technical Explanation",
-        "text": "A variable reserves memory space in RAM to store a specific datatype value."
+        "text": "Variables reserve memory space to store values of specific datatypes."
       },
 
       {
         "type": "deep",
-        "title": "Deep Explanation",
-        "text": "Variables combine datatype, variable name, and assigned value to manage application state and data flow during program execution."
+        "text": "Variables combine datatype, variable name, and assigned value to manage data flow and program state during execution."
       }
     ],
 
-    "syntax": {
-      "code": "datatype variableName = value;",
-      "explanation": "A variable contains datatype, variable name, assignment operator, and value."
-    },
+    "basic_terms": {
+      "datatype": "Defines what type of value can be stored.",
+      "variable_name": "The name used to access stored value.",
+      "value": "Actual information stored in variable.",
+      "assignment_operator": "= stores value inside variable.",
 
-    "datatype_examples": {
-      "int": [
-        {
-          "type": "basic",
-          "code": "int age = 20;",
-          "explanation": "Stores a person's age as a whole number."
-        },
+      "example": "int age = 20;",
 
-        {
-          "type": "student",
-          "code": "int marks = 95;",
-          "explanation": "Stores student marks."
-        },
-
-        {
-          "type": "gaming",
-          "code": "int score = 100;",
-          "explanation": "Stores game score."
-        },
-
-        {
-          "type": "shopping",
-          "code": "int quantity = 5;",
-          "explanation": "Stores number of products."
-        },
-
-        {
-          "type": "sports",
-          "code": "int runs = 87;",
-          "explanation": "Stores cricket runs."
-        }
-      ],
-
-      "String": [
-        {
-          "type": "basic",
-          "code": "String name = \"John\";",
-          "explanation": "Stores a person's name."
-        },
-
-        {
-          "type": "social_media",
-          "code": "String username = \"brainzo_user\";",
-          "explanation": "Stores username."
-        },
-
-        {
-          "type": "education",
-          "code": "String college = \"ABC College\";",
-          "explanation": "Stores college name."
-        },
-
-        {
-          "type": "technology",
-          "code": "String language = \"Java\";",
-          "explanation": "Stores programming language name."
-        },
-
-        {
-          "type": "app",
-          "code": "String appName = \"Brainzo\";",
-          "explanation": "Stores application name."
-        }
-      ],
-
-      "double": [
-        {
-          "type": "shopping",
-          "code": "double price = 99.99;",
-          "explanation": "Stores product price with decimals."
-        },
-
-        {
-          "type": "health",
-          "code": "double weight = 72.5;",
-          "explanation": "Stores body weight."
-        },
-
-        {
-          "type": "math",
-          "code": "double pi = 3.14;",
-          "explanation": "Stores decimal mathematical value."
-        },
-
-        {
-          "type": "education",
-          "code": "double percentage = 87.6;",
-          "explanation": "Stores exam percentage."
-        },
-
-        {
-          "type": "science",
-          "code": "double temperature = 36.7;",
-          "explanation": "Stores temperature value."
-        }
-      ],
-
-      "char": [
-        {
-          "type": "grade",
-          "code": "char grade = 'A';",
-          "explanation": "Stores single grade character."
-        },
-
-        {
-          "type": "gender",
-          "code": "char gender = 'M';",
-          "explanation": "Stores gender initial."
-        },
-
-        {
-          "type": "answer",
-          "code": "char answer = 'Y';",
-          "explanation": "Stores yes/no answer."
-        },
-
-        {
-          "type": "section",
-          "code": "char section = 'B';",
-          "explanation": "Stores classroom section."
-        },
-
-        {
-          "type": "symbol",
-          "code": "char symbol = '$';",
-          "explanation": "Stores a single symbol."
-        }
-      ],
-
-      "boolean": [
-        {
-          "type": "login",
-          "code": "boolean isLoggedIn = true;",
-          "explanation": "Stores login status."
-        },
-
-        {
-          "type": "education",
-          "code": "boolean hasPassed = true;",
-          "explanation": "Stores exam result."
-        },
-
-        {
-          "type": "premium",
-          "code": "boolean isPremium = false;",
-          "explanation": "Stores premium membership status."
-        },
-
-        {
-          "type": "learning",
-          "code": "boolean isLearningJava = true;",
-          "explanation": "Stores learning status."
-        },
-
-        {
-          "type": "dark_mode",
-          "code": "boolean isDarkMode = false;",
-          "explanation": "Stores dark mode setting."
-        }
+      "breakdown": [
+        "int → datatype",
+        "age → variable name",
+        "= → assignment operator",
+        "20 → stored value",
+        "; → statement ending"
       ]
     },
+
+    "syntax": {
+      "code": "datatype variableName = value;",
+      "explanation": "Variables are created using datatype, variable name, assignment operator, and value."
+    },
+
+    "datatype_examples": [
+
+      {
+        "datatype": "int",
+        "purpose": "Stores whole numbers.",
+
+        "examples": [
+          {
+            "type": "basic",
+            "code": "int age = 20;",
+            "output": "age stores 20",
+
+            "step_by_step": [
+              "int means whole number datatype",
+              "age is variable name",
+              "= stores value",
+              "20 is saved inside age"
+            ],
+
+            "real_life": "Used to store a person's age."
+          },
+
+          {
+            "type": "student",
+            "code": "int marks = 95;",
+            "output": "marks stores 95",
+
+            "step_by_step": [
+              "marks variable is created",
+              "95 is stored as exam marks"
+            ],
+
+            "real_life": "Used in school marks system."
+          },
+
+          {
+            "type": "gaming",
+            "code": "int score = 100;",
+            "output": "score stores 100",
+
+            "step_by_step": [
+              "score variable stores player score",
+              "100 becomes current score"
+            ],
+
+            "real_life": "Used in games to track points."
+          },
+
+          {
+            "type": "shopping",
+            "code": "int quantity = 5;",
+            "output": "quantity stores 5",
+
+            "step_by_step": [
+              "quantity variable is created",
+              "5 products are stored as quantity"
+            ],
+
+            "real_life": "Used in shopping carts."
+          },
+
+          {
+            "type": "sports",
+            "code": "int runs = 87;",
+            "output": "runs stores 87",
+
+            "step_by_step": [
+              "runs variable stores cricket score",
+              "87 becomes current runs"
+            ],
+
+            "real_life": "Used in sports scoreboards."
+          }
+        ]
+      },
+
+      {
+        "datatype": "String",
+        "purpose": "Stores text values.",
+
+        "examples": [
+          {
+            "type": "basic",
+            "code": "String name = \"John\";",
+            "output": "name stores John",
+
+            "step_by_step": [
+              "String means text datatype",
+              "name is variable name",
+              "John is stored inside double quotes"
+            ],
+
+            "real_life": "Stores person name."
+          },
+
+          {
+            "type": "social_media",
+            "code": "String username = \"brainzo_user\";",
+            "output": "username stores brainzo_user",
+
+            "step_by_step": [
+              "username variable is created",
+              "text value is stored"
+            ],
+
+            "real_life": "Used in Instagram or gaming accounts."
+          },
+
+          {
+            "type": "education",
+            "code": "String college = \"ABC College\";",
+            "output": "college stores ABC College",
+
+            "step_by_step": [
+              "college variable stores institution name",
+              "text is stored inside quotes"
+            ],
+
+            "real_life": "Used in student databases."
+          },
+
+          {
+            "type": "technology",
+            "code": "String language = \"Java\";",
+            "output": "language stores Java",
+
+            "step_by_step": [
+              "language variable stores programming language name"
+            ],
+
+            "real_life": "Used in coding apps."
+          },
+
+          {
+            "type": "app",
+            "code": "String appName = \"Brainzo\";",
+            "output": "appName stores Brainzo",
+
+            "step_by_step": [
+              "appName variable stores app title"
+            ],
+
+            "real_life": "Used in applications and software."
+          }
+        ]
+      },
+
+      {
+        "datatype": "double",
+        "purpose": "Stores decimal numbers.",
+
+        "examples": [
+          {
+            "type": "shopping",
+            "code": "double price = 99.99;",
+            "output": "price stores 99.99",
+
+            "step_by_step": [
+              "double stores decimal numbers",
+              "price variable stores product price"
+            ],
+
+            "real_life": "Used in billing systems."
+          },
+
+          {
+            "type": "health",
+            "code": "double weight = 72.5;",
+            "output": "weight stores 72.5",
+
+            "step_by_step": [
+              "weight variable stores decimal value"
+            ],
+
+            "real_life": "Used in health apps."
+          },
+
+          {
+            "type": "math",
+            "code": "double pi = 3.14;",
+            "output": "pi stores 3.14",
+
+            "step_by_step": [
+              "double handles decimal mathematical values"
+            ],
+
+            "real_life": "Used in scientific calculations."
+          },
+
+          {
+            "type": "education",
+            "code": "double percentage = 87.6;",
+            "output": "percentage stores 87.6",
+
+            "step_by_step": [
+              "percentage variable stores decimal marks"
+            ],
+
+            "real_life": "Used in report cards."
+          },
+
+          {
+            "type": "science",
+            "code": "double temperature = 36.7;",
+            "output": "temperature stores 36.7",
+
+            "step_by_step": [
+              "temperature variable stores decimal temperature"
+            ],
+
+            "real_life": "Used in weather apps."
+          }
+        ]
+      },
+
+      {
+        "datatype": "char",
+        "purpose": "Stores single character.",
+
+        "examples": [
+          {
+            "type": "grade",
+            "code": "char grade = 'A';",
+            "output": "grade stores A",
+
+            "step_by_step": [
+              "char stores only one character",
+              "single quotes are used"
+            ],
+
+            "real_life": "Used for grades."
+          },
+
+          {
+            "type": "gender",
+            "code": "char gender = 'M';",
+            "output": "gender stores M",
+
+            "step_by_step": [
+              "single character is stored"
+            ],
+
+            "real_life": "Used in forms."
+          },
+
+          {
+            "type": "answer",
+            "code": "char answer = 'Y';",
+            "output": "answer stores Y",
+
+            "step_by_step": [
+              "char stores yes/no answer"
+            ],
+
+            "real_life": "Used in confirmation systems."
+          },
+
+          {
+            "type": "section",
+            "code": "char section = 'B';",
+            "output": "section stores B",
+
+            "step_by_step": [
+              "section variable stores classroom section"
+            ],
+
+            "real_life": "Used in schools."
+          },
+
+          {
+            "type": "symbol",
+            "code": "char symbol = '$';",
+            "output": "symbol stores $",
+
+            "step_by_step": [
+              "char can store symbols"
+            ],
+
+            "real_life": "Used in currency systems."
+          }
+        ]
+      },
+
+      {
+        "datatype": "boolean",
+        "purpose": "Stores true or false.",
+
+        "examples": [
+          {
+            "type": "login",
+            "code": "boolean isLoggedIn = true;",
+            "output": "isLoggedIn stores true",
+
+            "step_by_step": [
+              "boolean stores true or false values"
+            ],
+
+            "real_life": "Used in login systems."
+          },
+
+          {
+            "type": "education",
+            "code": "boolean hasPassed = true;",
+            "output": "hasPassed stores true",
+
+            "step_by_step": [
+              "stores exam result"
+            ],
+
+            "real_life": "Used in school systems."
+          },
+
+          {
+            "type": "premium",
+            "code": "boolean isPremium = false;",
+            "output": "isPremium stores false",
+
+            "step_by_step": [
+              "stores membership status"
+            ],
+
+            "real_life": "Used in subscription apps."
+          },
+
+          {
+            "type": "learning",
+            "code": "boolean isLearningJava = true;",
+            "output": "isLearningJava stores true",
+
+            "step_by_step": [
+              "tracks learning state"
+            ],
+
+            "real_life": "Used in education apps."
+          },
+
+          {
+            "type": "dark_mode",
+            "code": "boolean isDarkMode = false;",
+            "output": "isDarkMode stores false",
+
+            "step_by_step": [
+              "stores theme setting"
+            ],
+
+            "real_life": "Used in app settings."
+          }
+        ]
+      }
+    ],
+
+    "wrong_vs_correct": [
+      {
+        "wrong": "int age = \"20\";",
+        "correct": "int age = 20;",
+        "why_wrong": "int cannot store text values."
+      },
+
+      {
+        "wrong": "String name = 'John';",
+        "correct": "String name = \"John\";",
+        "why_wrong": "String uses double quotes."
+      },
+
+      {
+        "wrong": "char grade = \"A\";",
+        "correct": "char grade = 'A';",
+        "why_wrong": "char stores only one character using single quotes."
+      },
+
+      {
+        "wrong": "boolean isStudent = \"true\";",
+        "correct": "boolean isStudent = true;",
+        "why_wrong": "boolean stores true or false without quotes."
+      }
+    ],
+
+    "common_mistakes": [
+      "Forgetting semicolon ;",
+      "Using wrong datatype",
+      "Using single quotes for String",
+      "Using double quotes for char",
+      "Giving spaces in variable names"
+    ],
 
     "practice": [
       "Create 5 int variables.",
       "Create 5 String variables.",
       "Create 5 double variables.",
-      "Print all variables using System.out.println().",
-      "Create a student information program."
-    ],
-
-    "common_mistakes": [
-      "Forgetting semicolon ;",
-      "Using double quotes for char",
-      "Using single quotes for String",
-      "Giving wrong datatype",
-      "Using spaces in variable names"
+      "Create 5 char variables.",
+      "Create 5 boolean variables.",
+      "Print all variables using System.out.println()."
     ],
 
     "quiz": [
@@ -234,11 +464,6 @@
       },
 
       {
-        "question": "Which datatype stores true or false?",
-        "answer": "boolean"
-      },
-
-      {
         "question": "Which datatype stores decimal numbers?",
         "answer": "double"
       },
@@ -246,14 +471,27 @@
       {
         "question": "Which datatype stores one character?",
         "answer": "char"
+      },
+
+      {
+        "question": "Which datatype stores true or false?",
+        "answer": "boolean"
       }
     ],
 
     "mini_project": {
       "title": "Student Information System",
-      "task": "Create variables for student name, age, marks, grade, and pass status. Print all details."
+      "task": "Create variables for student name, age, marks, grade, percentage, and pass status. Print all details."
     },
 
-    "summary": "Variables help Java programs store, manage, and use data efficiently."
+    "revision_summary": [
+      "Variables store data.",
+      "Datatypes define what kind of value can be stored.",
+      "int stores whole numbers.",
+      "String stores text.",
+      "double stores decimals.",
+      "char stores single characters.",
+      "boolean stores true or false."
+    ]
   }
 }
