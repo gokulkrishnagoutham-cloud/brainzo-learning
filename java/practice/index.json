@@ -1,0 +1,85 @@
+{
+  "id": "practice_section",
+  "title": "Java Practice Section",
+  "description": "Practice Java concepts with exercises, challenges, debugging, and problem-solving.",
+
+  "lessons": [
+    {
+      "id": "java_practice_001",
+      "title": "Print Statements and Java Syntax",
+      "file": "001_print_statement_and_java_syntax.json"
+    },
+
+    {
+      "id": "java_practice_002",
+      "title": "Variables and Datatypes Practice",
+      "file": "002_variables_and_data_types.json"
+    },
+
+    {
+      "id": "java_practice_003",
+      "title": "Strings Practice",
+      "file": "003_strings.json"
+    },
+
+    {
+      "id": "java_practice_004",
+      "title": "User Input Practice",
+      "file": "004_user_input.json"
+    },
+
+    {
+      "id": "java_practice_005",
+      "title": "Algorithmic Problems Level 1",
+      "file": "005_algorithmic_problems_level_1.json"
+    },
+
+    {
+      "id": "java_practice_006",
+      "title": "Algorithmic Problems Level 2",
+      "file": "006_algorithmic_problems_level_2.json"
+    },
+
+    {
+      "id": "java_practice_007",
+      "title": "Algorithmic Problems Level 3",
+      "file": "007_algorithmic_problems_level_3.json"
+    },
+
+    {
+      "id": "java_practice_008",
+      "title": "Conditional Statements Practice",
+      "file": "008_conditional_statements.json"
+    },
+
+    {
+      "id": "java_practice_009",
+      "title": "Debug Your Code",
+      "file": "009_debug_your_code.json"
+    },
+
+    {
+      "id": "java_practice_010",
+      "title": "Arrays Practice",
+      "file": "010_arrays.json"
+    },
+
+    {
+      "id": "java_practice_011",
+      "title": "Loops Practice",
+      "file": "011_loops.json"
+    },
+
+    {
+      "id": "java_practice_012",
+      "title": "Methods in Java Practice",
+      "file": "012_methods_in_java.json"
+    },
+
+    {
+      "id": "java_practice_013",
+      "title": "Complex Algorithmic Problems",
+      "file": "013_complex_algorithmic_problems.json"
+    }
+  ]
+}
