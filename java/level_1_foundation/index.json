@@ -2,17 +2,78 @@
   "id": "level_1_foundation",
   "title": "Level 1 Foundation",
   "description": "Start learning Java basics step by step.",
+
   "lessons": [
     {
       "id": "java_foundation_001",
       "title": "Getting Started with Java",
       "file": "001_getting_started_with_java.json"
-    }
+    },
 
     {
-  "id": "java_foundation_variables",
-  "title": "Variables in Java",
-  "file": "002_variables_and_datatypes.json"
-}
+      "id": "java_foundation_002",
+      "title": "Variables and Datatypes",
+      "file": "002_variables_and_datatypes.json"
+    },
+
+    {
+      "id": "java_foundation_003",
+      "title": "Operators in Java",
+      "file": "003_operators.json"
+    },
+
+    {
+      "id": "java_foundation_004",
+      "title": "Strings and Text Processing",
+      "file": "004_strings_and_text_processing.json"
+    },
+
+    {
+      "id": "java_foundation_005",
+      "title": "User Input in Java",
+      "file": "005_user_input.json"
+    },
+
+    {
+      "id": "java_foundation_006",
+      "title": "Control Flow in Java",
+      "file": "006_control_flow.json"
+    },
+
+    {
+      "id": "java_foundation_007",
+      "title": "Code Debugging in Java",
+      "file": "007_code_debugging.json"
+    },
+
+    {
+      "id": "java_foundation_008",
+      "title": "Arrays in Java",
+      "file": "008_arrays_in_java.json"
+    },
+
+    {
+      "id": "java_foundation_009",
+      "title": "Object Oriented Programming (OOP) Basics",
+      "file": "009_oop_basics.json"
+    },
+
+    {
+      "id": "java_foundation_010",
+      "title": "File I/O Basics in Java",
+      "file": "010_file_io_basics.json"
+    },
+
+    {
+      "id": "java_foundation_011",
+      "title": "Beginner Level Java Projects",
+      "file": "011_beginner_level_projects.json"
+    },
+
+    {
+      "id": "java_foundation_012",
+      "title": "Intermediate Level Java Projects",
+      "file": "012_intermediate_level_projects.json"
+    }
   ]
 }
