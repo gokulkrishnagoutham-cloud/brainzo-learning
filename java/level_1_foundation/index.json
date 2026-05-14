@@ -8,5 +8,11 @@
       "title": "Getting Started with Java",
       "file": "001_getting_started_with_java.json"
     }
+
+    {
+  "id": "java_foundation_variables",
+  "title": "Variables in Java",
+  "file": "002_variables_and_datatypes.json"
+}
   ]
 }
