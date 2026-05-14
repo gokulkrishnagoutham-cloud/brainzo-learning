@@ -1,0 +1,13 @@
+{
+  "subject": "Java",
+  "title": "Java Learning Path",
+  "version": 1,
+  "basePath": "java",
+  "sections": [
+    {
+      "id": "level_1_foundation",
+      "title": "Level 1 Foundation",
+      "path": "level_1_foundation/index.json"
+    }
+  ]
+}
