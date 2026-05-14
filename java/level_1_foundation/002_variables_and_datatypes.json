@@ -1,0 +1,259 @@
+{
+  "id": "java_foundation_variables",
+  "title": "Variables in Java",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 20,
+
+  "content": {
+    "topic_intro": "Variables are used to store data in Java programs.",
+
+    "explanations": [
+      {
+        "type": "simple",
+        "title": "Simple Explanation",
+        "text": "A variable is a container used to store information."
+      },
+
+      {
+        "type": "real_life",
+        "title": "Real Life Explanation",
+        "text": "A variable is like a labeled bottle. The label tells what is inside, and the bottle stores the value."
+      },
+
+      {
+        "type": "student_friendly",
+        "title": "Student Friendly Explanation",
+        "text": "Variables help programs remember things like names, marks, scores, and prices."
+      },
+
+      {
+        "type": "technical",
+        "title": "Technical Explanation",
+        "text": "A variable reserves memory space in RAM to store a specific datatype value."
+      },
+
+      {
+        "type": "deep",
+        "title": "Deep Explanation",
+        "text": "Variables combine datatype, variable name, and assigned value to manage application state and data flow during program execution."
+      }
+    ],
+
+    "syntax": {
+      "code": "datatype variableName = value;",
+      "explanation": "A variable contains datatype, variable name, assignment operator, and value."
+    },
+
+    "datatype_examples": {
+      "int": [
+        {
+          "type": "basic",
+          "code": "int age = 20;",
+          "explanation": "Stores a person's age as a whole number."
+        },
+
+        {
+          "type": "student",
+          "code": "int marks = 95;",
+          "explanation": "Stores student marks."
+        },
+
+        {
+          "type": "gaming",
+          "code": "int score = 100;",
+          "explanation": "Stores game score."
+        },
+
+        {
+          "type": "shopping",
+          "code": "int quantity = 5;",
+          "explanation": "Stores number of products."
+        },
+
+        {
+          "type": "sports",
+          "code": "int runs = 87;",
+          "explanation": "Stores cricket runs."
+        }
+      ],
+
+      "String": [
+        {
+          "type": "basic",
+          "code": "String name = \"John\";",
+          "explanation": "Stores a person's name."
+        },
+
+        {
+          "type": "social_media",
+          "code": "String username = \"brainzo_user\";",
+          "explanation": "Stores username."
+        },
+
+        {
+          "type": "education",
+          "code": "String college = \"ABC College\";",
+          "explanation": "Stores college name."
+        },
+
+        {
+          "type": "technology",
+          "code": "String language = \"Java\";",
+          "explanation": "Stores programming language name."
+        },
+
+        {
+          "type": "app",
+          "code": "String appName = \"Brainzo\";",
+          "explanation": "Stores application name."
+        }
+      ],
+
+      "double": [
+        {
+          "type": "shopping",
+          "code": "double price = 99.99;",
+          "explanation": "Stores product price with decimals."
+        },
+
+        {
+          "type": "health",
+          "code": "double weight = 72.5;",
+          "explanation": "Stores body weight."
+        },
+
+        {
+          "type": "math",
+          "code": "double pi = 3.14;",
+          "explanation": "Stores decimal mathematical value."
+        },
+
+        {
+          "type": "education",
+          "code": "double percentage = 87.6;",
+          "explanation": "Stores exam percentage."
+        },
+
+        {
+          "type": "science",
+          "code": "double temperature = 36.7;",
+          "explanation": "Stores temperature value."
+        }
+      ],
+
+      "char": [
+        {
+          "type": "grade",
+          "code": "char grade = 'A';",
+          "explanation": "Stores single grade character."
+        },
+
+        {
+          "type": "gender",
+          "code": "char gender = 'M';",
+          "explanation": "Stores gender initial."
+        },
+
+        {
+          "type": "answer",
+          "code": "char answer = 'Y';",
+          "explanation": "Stores yes/no answer."
+        },
+
+        {
+          "type": "section",
+          "code": "char section = 'B';",
+          "explanation": "Stores classroom section."
+        },
+
+        {
+          "type": "symbol",
+          "code": "char symbol = '$';",
+          "explanation": "Stores a single symbol."
+        }
+      ],
+
+      "boolean": [
+        {
+          "type": "login",
+          "code": "boolean isLoggedIn = true;",
+          "explanation": "Stores login status."
+        },
+
+        {
+          "type": "education",
+          "code": "boolean hasPassed = true;",
+          "explanation": "Stores exam result."
+        },
+
+        {
+          "type": "premium",
+          "code": "boolean isPremium = false;",
+          "explanation": "Stores premium membership status."
+        },
+
+        {
+          "type": "learning",
+          "code": "boolean isLearningJava = true;",
+          "explanation": "Stores learning status."
+        },
+
+        {
+          "type": "dark_mode",
+          "code": "boolean isDarkMode = false;",
+          "explanation": "Stores dark mode setting."
+        }
+      ]
+    },
+
+    "practice": [
+      "Create 5 int variables.",
+      "Create 5 String variables.",
+      "Create 5 double variables.",
+      "Print all variables using System.out.println().",
+      "Create a student information program."
+    ],
+
+    "common_mistakes": [
+      "Forgetting semicolon ;",
+      "Using double quotes for char",
+      "Using single quotes for String",
+      "Giving wrong datatype",
+      "Using spaces in variable names"
+    ],
+
+    "quiz": [
+      {
+        "question": "Which datatype stores whole numbers?",
+        "answer": "int"
+      },
+
+      {
+        "question": "Which datatype stores text?",
+        "answer": "String"
+      },
+
+      {
+        "question": "Which datatype stores true or false?",
+        "answer": "boolean"
+      },
+
+      {
+        "question": "Which datatype stores decimal numbers?",
+        "answer": "double"
+      },
+
+      {
+        "question": "Which datatype stores one character?",
+        "answer": "char"
+      }
+    ],
+
+    "mini_project": {
+      "title": "Student Information System",
+      "task": "Create variables for student name, age, marks, grade, and pass status. Print all details."
+    },
+
+    "summary": "Variables help Java programs store, manage, and use data efficiently."
+  }
+}
