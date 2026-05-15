@@ -3,30 +3,69 @@
   "title": "Getting Started with Java",
   "difficulty": "Beginner",
   "estimatedMinutes": 10,
+
   "content": {
-    "intro": "Java is one of the most popular programming languages in the world.",
-    "why_learn_java": [
+
+    "topic_intro": {
+      "text": "Java is one of the most popular programming languages in the world."
+    },
+
+    "why_learn_this": [
       "Used for Android development",
       "Used in backend systems",
       "Used in enterprise applications",
       "Cross-platform support using JVM"
     ],
-    "what_is_jvm": "JVM stands for Java Virtual Machine. It allows Java code to run on different operating systems.",
-    "first_program": {
+
+    "basic_terms": [
+      {
+        "term": "JVM",
+        "meaning": "Java Virtual Machine"
+      }
+    ],
+
+    "syntax": {
       "title": "Hello World",
       "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello Java\");\n  }\n}"
     },
-    "explanation": [
-      "public class Main creates a class",
-      "main() is the entry point of Java program",
-      "System.out.println() prints text"
+
+    "explanations": [
+      {
+        "text": "public class Main creates a class"
+      },
+      {
+        "text": "main() is the entry point of Java program"
+      },
+      {
+        "text": "System.out.println() prints text"
+      }
     ],
+
+    "datatype_examples": [
+      {
+        "title": "Printing Text",
+        "examples": [
+          {
+            "type": "Basic Example",
+            "code": "System.out.println(\"Hello\")",
+            "output": "Hello"
+          },
+          {
+            "type": "Another Example",
+            "code": "System.out.println(\"Java\")",
+            "output": "Java"
+          }
+        ]
+      }
+    ],
+
     "practice": [
       "Install Java JDK",
       "Install IntelliJ IDEA",
       "Run Hello World program",
       "Change output text"
     ],
+
     "quiz": [
       {
         "question": "What does JVM stand for?",
@@ -37,6 +76,9 @@
         "answer": "System.out.println()"
       }
     ],
-    "summary": "Java is powerful, platform-independent, and widely used in real-world software development."
+
+    "revision_summary": {
+      "text": "Java is powerful, platform-independent, and widely used in real-world software development."
+    }
   }
 }
