@@ -5,9 +5,17 @@
   "estimatedMinutes": 70,
 
   "content": {
-    "topic_intro": "Object Oriented Programming (OOP) is a programming style where programs are built using objects and classes.",
+    "topic_intro": {
+      "text": "Object Oriented Programming (OOP) is a programming style where programs are built using objects and classes."
+    },
 
-    "why_learn_this": "Most real-world Java applications use OOP because it makes programs organized, reusable, scalable, and easier to manage.",
+    "why_learn_this": [
+      "Most real-world Java applications use OOP",
+      "OOP makes programs organized and reusable",
+      "Large applications become easier to manage",
+      "Games, apps, and websites use OOP",
+      "OOP is one of the most important Java concepts"
+    ],
 
     "explanations": [
       {
@@ -22,111 +30,282 @@
 
       {
         "type": "student_friendly",
-        "text": "OOP helps programmers model real-world things like students, cars, users, and games inside programs."
+        "text": "OOP helps programmers model real-world things like students, cars, users, and games."
       },
 
       {
         "type": "technical",
-        "text": "OOP organizes software using classes, objects, methods, and data abstraction."
+        "text": "OOP organizes software using classes, objects, methods, and properties."
       },
 
       {
         "type": "deep",
-        "text": "Object Oriented Programming structures applications around interacting objects that encapsulate state and behavior, enabling modular and reusable software architecture."
+        "text": "Object Oriented Programming structures applications around interacting objects that encapsulate state and behavior."
       }
     ],
 
-    "basic_terms": {
-      "class": "Blueprint used to create objects.",
-      "object": "Real instance created from class.",
-      "method": "Function inside class.",
-      "property": "Variable inside class.",
+    "basic_terms": [
+      {
+        "term": "Class",
+        "meaning": "Blueprint used to create objects."
+      },
 
-      "example": "Car car1 = new Car();",
+      {
+        "term": "Object",
+        "meaning": "Real instance created from class."
+      },
 
-      "breakdown": [
-        "Car is class",
-        "car1 is object",
-        "new creates object",
-        "Object gets memory"
-      ]
-    },
+      {
+        "term": "Method",
+        "meaning": "Function inside class."
+      },
+
+      {
+        "term": "Property",
+        "meaning": "Variable inside class."
+      },
+
+      {
+        "term": "new Keyword",
+        "meaning": "Used to create objects."
+      }
+    ],
 
     "real_world_understanding": {
 
       "car_example": {
         "class": "Car",
+
         "objects": [
           "BMW",
           "Audi",
           "Tesla"
         ],
 
-        "explanation": "All cars are objects created from Car blueprint."
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Car is class and BMW is object."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "All cars are created from one blueprint."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Factories create many cars from one design."
+          },
+
+          {
+            "type": "technical",
+            "text": "Objects are instances of class."
+          },
+
+          {
+            "type": "deep",
+            "text": "One class can generate multiple independent objects with different values."
+          }
+        ]
       },
 
       "student_example": {
         "class": "Student",
+
         "objects": [
           "John",
           "Alex",
           "Sam"
         ],
 
-        "explanation": "Each student object has different data."
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Student is class while John is object."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "Each student object stores different information."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Schools manage many student records."
+          },
+
+          {
+            "type": "technical",
+            "text": "Each object contains separate property values."
+          },
+
+          {
+            "type": "deep",
+            "text": "Objects allow independent state management within the same class structure."
+          }
+        ]
       }
     },
 
     "class_creation": {
-
       "title": "Creating a Class",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "A class creates a blueprint."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Classes define what data and actions objects will have."
+        },
+
+        {
+          "type": "real_life",
+          "text": "A building plan is like a class blueprint."
+        },
+
+        {
+          "type": "technical",
+          "text": "Classes define properties and methods."
+        },
+
+        {
+          "type": "deep",
+          "text": "Classes provide reusable templates for object creation."
+        }
+      ],
 
       "code": "class Student {\n    String name;\n    int age;\n}",
 
       "step_by_step": [
         "class keyword creates blueprint",
-        "Student is class name",
-        "name and age are properties"
+        "Student becomes class name",
+        "name is property",
+        "age is property",
+        "Class becomes ready for object creation"
       ],
 
       "real_life": "Student blueprint for storing student data."
     },
 
     "object_creation": {
-
       "title": "Creating an Object",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "Objects are created from classes."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Objects are real usable versions of class blueprint."
+        },
+
+        {
+          "type": "real_life",
+          "text": "A real car is created from car design blueprint."
+        },
+
+        {
+          "type": "technical",
+          "text": "Objects allocate memory for class members."
+        },
+
+        {
+          "type": "deep",
+          "text": "Objects encapsulate state and behavior defined by class."
+        }
+      ],
 
       "code": "Student s1 = new Student();",
 
       "step_by_step": [
         "Student is class",
-        "s1 is object name",
+        "s1 becomes object name",
         "new creates object",
-        "Object gets memory allocation"
+        "Memory gets allocated",
+        "Object becomes ready for use"
       ],
 
-      "real_life": "Creating actual student record from blueprint."
+      "real_life": "Creating actual student record."
     },
 
     "assigning_values": {
-
       "title": "Assigning Object Values",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "Objects can store values."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Properties store information about object."
+        },
+
+        {
+          "type": "real_life",
+          "text": "Apps save user details into objects."
+        },
+
+        {
+          "type": "technical",
+          "text": "Dot operator accesses object properties."
+        },
+
+        {
+          "type": "deep",
+          "text": "Object state changes through property assignment."
+        }
+      ],
 
       "code": "s1.name = \"John\";\ns1.age = 20;",
 
       "step_by_step": [
         "s1 accesses object",
-        ".name accesses name property",
-        "John is stored in object",
-        "age property stores 20"
+        ".name accesses property",
+        "John is stored",
+        "age property stores 20",
+        "Object now contains data"
       ],
 
-      "real_life": "Saving student details."
+      "real_life": "Saving student information."
     },
 
     "printing_values": {
-
       "title": "Accessing Object Data",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "Object values can be printed."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Programs can display object information."
+        },
+
+        {
+          "type": "real_life",
+          "text": "Apps display user profile details."
+        },
+
+        {
+          "type": "technical",
+          "text": "Dot operator retrieves property values."
+        },
+
+        {
+          "type": "deep",
+          "text": "Object state becomes accessible through property access."
+        }
+      ],
 
       "code": "System.out.println(s1.name);\nSystem.out.println(s1.age);",
 
@@ -136,29 +315,86 @@
       ],
 
       "step_by_step": [
-        "Object property is accessed",
-        "Stored value gets printed"
+        "s1.name accesses name",
+        "Stored value becomes John",
+        "s1.age accesses age",
+        "Stored value becomes 20",
+        "Both values are printed"
       ]
     },
 
     "methods_in_oop": {
-
       "title": "Methods Inside Class",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "Methods define object actions."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Methods tell objects what they can do."
+        },
+
+        {
+          "type": "real_life",
+          "text": "Cars can start, stop, and move just like objects use methods."
+        },
+
+        {
+          "type": "technical",
+          "text": "Methods define behavior inside classes."
+        },
+
+        {
+          "type": "deep",
+          "text": "Methods encapsulate reusable logic associated with objects."
+        }
+      ],
 
       "code": "class Student {\n\n    void study() {\n        System.out.println(\"Student is studying\");\n    }\n}",
 
       "step_by_step": [
-        "study() is method",
-        "Method defines object behavior",
-        "Object can call method"
+        "study() becomes method",
+        "Method defines behavior",
+        "Object can call method",
+        "Method executes code",
+        "Output gets printed"
       ],
 
-      "real_life": "Student can study, eat, play."
+      "real_life": "Student can study, eat, and play."
     },
 
     "calling_methods": {
-
       "title": "Calling Object Methods",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "Objects can call methods."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Methods run actions for objects."
+        },
+
+        {
+          "type": "real_life",
+          "text": "Apps trigger actions using methods."
+        },
+
+        {
+          "type": "technical",
+          "text": "Method invocation executes behavior."
+        },
+
+        {
+          "type": "deep",
+          "text": "Objects interact with system functionality through method calls."
+        }
+      ],
 
       "code": "s1.study();",
 
@@ -166,14 +402,42 @@
 
       "step_by_step": [
         "s1 accesses object",
-        "study() method runs",
-        "Message gets printed"
+        "study() method is called",
+        "Method code executes",
+        "Message gets printed",
+        "Action completes"
       ]
     },
 
     "complete_program": {
-
       "title": "Complete OOP Program",
+
+      "explanations": [
+        {
+          "type": "simple",
+          "text": "Complete programs combine classes, objects, and methods."
+        },
+
+        {
+          "type": "student_friendly",
+          "text": "Objects store data and methods perform actions."
+        },
+
+        {
+          "type": "real_life",
+          "text": "Real apps combine many objects together."
+        },
+
+        {
+          "type": "technical",
+          "text": "Classes encapsulate data and behavior."
+        },
+
+        {
+          "type": "deep",
+          "text": "OOP systems organize applications into reusable modular structures."
+        }
+      ],
 
       "code": "class Student {\n\n    String name;\n    int age;\n\n    void display() {\n        System.out.println(name);\n        System.out.println(age);\n    }\n}\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        Student s1 = new Student();\n\n        s1.name = \"John\";\n        s1.age = 20;\n\n        s1.display();\n    }\n}",
 
@@ -185,8 +449,9 @@
       "step_by_step": [
         "Student class is created",
         "Object s1 is created",
-        "Values assigned to object",
-        "display() method prints values"
+        "Values are assigned",
+        "display() method is called",
+        "Object values get printed"
       ]
     },
 
@@ -234,15 +499,27 @@
         "wrong": "void display;",
         "correct": "void display()",
         "why_wrong": "Methods require brackets."
+      },
+
+      {
+        "wrong": "s1.study;",
+        "correct": "s1.study();",
+        "why_wrong": "Methods must be called using brackets."
+      },
+
+      {
+        "wrong": "class student",
+        "correct": "class Student",
+        "why_wrong": "Class names usually start with capital letter."
       }
     ],
 
     "common_mistakes": [
       "Confusing class and object",
       "Forgetting new keyword",
-      "Accessing properties incorrectly",
       "Missing method brackets",
-      "Using wrong object references"
+      "Using wrong object references",
+      "Accessing properties incorrectly"
     ],
 
     "practice": [
@@ -250,8 +527,7 @@
       "Create Student class.",
       "Create Employee object.",
       "Add methods to objects.",
-      "Print object details.",
-      "Create mobile phone class."
+      "Print object details."
     ],
 
     "quiz": [
@@ -276,13 +552,14 @@
       },
 
       {
-        "question": "Does OOP help organize code?",
+        "question": "Does OOP improve code organization?",
         "answer": "Yes"
       }
     ],
 
     "mini_project": {
       "title": "Student Management System",
+
       "task": "Create Student class with name, age, marks, and display method. Create multiple student objects and print details."
     },
 
@@ -292,7 +569,7 @@
       "Object is real instance.",
       "Methods define behavior.",
       "Properties store data.",
-      "OOP improves code organization and reusability."
+      "OOP improves code organization."
     ]
   }
 }
