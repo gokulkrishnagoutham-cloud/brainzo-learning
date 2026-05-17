@@ -5,53 +5,77 @@
   "estimatedMinutes": 10,
   "content": {
     "topic_intro": {
-      "text": "Java is one of the most popular programming languages in the world."
+      "text": "Java is a powerful programming language used to build mobile apps, websites, games, backend servers, banking systems, and enterprise software. It is one of the most popular languages in the world because Java programs can run on different operating systems using the JVM."
     },
+
     "why_learn_this": [
-      "Used for Android development",
-      "Used in backend systems",
-      "Used in enterprise applications",
-      "Cross-platform support using JVM"
+      "Java is used in Android app development",
+      "Large companies use Java for backend systems",
+      "Java is beginner-friendly and widely taught",
+      "Learning Java helps understand object-oriented programming",
+      "Java developers are in high demand"
     ],
+
     "basic_terms": [
       {
         "term": "JVM",
-        "meaning": "JVM stands for Java Virtual Machine. It allows Java code to run on different operating systems."
+        "meaning": "JVM stands for Java Virtual Machine. It allows Java programs to run on Windows, Mac, and Linux without changing the code."
+      },
+      {
+        "term": "JDK",
+        "meaning": "JDK stands for Java Development Kit. It contains tools needed to write and run Java programs."
+      },
+      {
+        "term": "Compiler",
+        "meaning": "A compiler converts Java code into bytecode that the JVM can understand."
       }
     ],
+
     "syntax": {
-      "title": "Hello World",
+      "title": "Hello World Program",
       "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello Java\");\n  }\n}"
     },
+
     "explanations": [
       {
-        "text": "public class Main creates a class"
+        "text": "public class Main creates a class named Main."
       },
       {
-        "text": "main() is the entry point of Java program"
+        "text": "main() is the starting point of every Java program."
       },
       {
-        "text": "System.out.println() prints text"
+        "text": "System.out.println() is used to print output on the screen."
+      },
+      {
+        "text": "Curly braces {} are used to define blocks of code."
       }
     ],
+
     "practice": [
-      "Install Java JDK",
-      "Install IntelliJ IDEA",
-      "Run Hello World program",
-      "Change output text"
+      "Install Java JDK on your computer",
+      "Install IntelliJ IDEA or VS Code",
+      "Create your first Java file",
+      "Run the Hello World program",
+      "Change the printed message to your name"
     ],
+
     "quiz": [
       {
         "question": "What does JVM stand for?",
         "answer": "Java Virtual Machine"
       },
       {
-        "question": "Which function prints text?",
+        "question": "Which function is used to print output?",
         "answer": "System.out.println()"
+      },
+      {
+        "question": "What is the starting method of a Java program?",
+        "answer": "main()"
       }
     ],
+
     "revision_summary": {
-      "text": "Java is powerful, platform-independent, and widely used in real-world software development."
+      "text": "Java is a cross-platform programming language used in many real-world applications. JVM allows Java code to run on multiple operating systems. Every Java program starts from the main() method."
     }
   }
 }
