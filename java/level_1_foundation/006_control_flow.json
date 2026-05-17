@@ -2,12 +2,20 @@
   "id": "java_foundation_006",
   "title": "Control Flow in Java",
   "difficulty": "Beginner",
-  "estimatedMinutes": 50,
+  "estimatedMinutes": 60,
 
   "content": {
-    "topic_intro": "Control flow decides how a program executes different blocks of code.",
+    "topic_intro": {
+      "text": "Control flow decides how a Java program runs different blocks of code. It helps programs make decisions, repeat actions, and respond differently based on situations."
+    },
 
-    "why_learn_this": "Without control flow, programs would execute everything in a straight line and could never make decisions.",
+    "why_learn_this": [
+      "Control flow helps programs make decisions",
+      "Apps use control flow for login systems and validations",
+      "Games use control flow for health, score, and levels",
+      "Loops and conditions are required in every Java application",
+      "Control flow is one of the most important programming concepts"
+    ],
 
     "explanations": [
       {
@@ -17,39 +25,51 @@
 
       {
         "type": "real_life",
-        "text": "Control flow is like traffic signals. Different situations decide what happens next."
+        "text": "Control flow is like traffic signals where different situations decide what happens next."
       },
 
       {
         "type": "student_friendly",
-        "text": "Programs use control flow to make decisions like login success, exam pass/fail, and game conditions."
+        "text": "Programs use control flow for login success, pass/fail results, game conditions, and menu systems."
       },
 
       {
         "type": "technical",
-        "text": "Control flow uses conditions and loops to alter execution order in programs."
+        "text": "Control flow changes execution order using conditions and loops."
       },
 
       {
         "type": "deep",
-        "text": "Control flow structures manage logical execution paths, enabling dynamic runtime behavior and decision-based programming."
+        "text": "Control flow structures manage logical execution paths and dynamic runtime behavior in applications."
       }
     ],
 
-    "basic_terms": {
-      "condition": "An expression that becomes true or false.",
-      "if_statement": "Runs code only if condition is true.",
-      "else_statement": "Runs code if condition is false.",
-      "loop": "Repeats code multiple times.",
+    "basic_terms": [
+      {
+        "term": "Condition",
+        "meaning": "An expression that becomes true or false."
+      },
 
-      "example": "if(age >= 18)",
+      {
+        "term": "if Statement",
+        "meaning": "Runs code only if condition is true."
+      },
 
-      "breakdown": [
-        "if checks condition",
-        "age >= 18 is condition",
-        "Program decides based on result"
-      ]
-    },
+      {
+        "term": "else Statement",
+        "meaning": "Runs code when condition is false."
+      },
+
+      {
+        "term": "Loop",
+        "meaning": "Repeats code multiple times."
+      },
+
+      {
+        "term": "switch Statement",
+        "meaning": "Checks multiple fixed cases."
+      }
+    ],
 
     "control_flow_types": [
 
@@ -58,62 +78,101 @@
 
         "purpose": "Runs code only if condition is true.",
 
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "if statement checks a condition."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "Code inside if runs only when condition becomes true."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Apps use if statements for login checks and eligibility systems."
+          },
+
+          {
+            "type": "technical",
+            "text": "if executes block conditionally based on boolean expression."
+          },
+
+          {
+            "type": "deep",
+            "text": "if statements enable decision-based execution paths in software systems."
+          }
+        ],
+
         "examples": [
           {
             "type": "age_check",
+
             "code": "int age = 20;\n\nif(age >= 18) {\n    System.out.println(\"Adult\");\n}",
 
             "output": "Adult",
 
             "step_by_step": [
               "age stores 20",
-              "condition checks if age is greater than or equal to 18",
-              "condition becomes true",
-              "Adult is printed"
+              "Condition checks age >= 18",
+              "Condition becomes true",
+              "if block executes",
+              "Adult gets printed"
             ],
 
-            "real_life": "Checking voting eligibility."
+            "real_life": "Voting eligibility systems."
           },
 
           {
             "type": "marks_check",
+
             "code": "int marks = 90;\n\nif(marks > 50) {\n    System.out.println(\"Passed\");\n}",
 
             "output": "Passed",
 
             "step_by_step": [
               "marks stores 90",
-              "condition checks if marks are above 50",
-              "condition becomes true",
-              "Passed is printed"
+              "Condition checks marks > 50",
+              "Condition becomes true",
+              "if block runs",
+              "Passed gets printed"
             ],
 
-            "real_life": "School result system."
+            "real_life": "School result systems."
           },
 
           {
             "type": "gaming",
+
             "code": "int health = 100;\n\nif(health > 0) {\n    System.out.println(\"Player Alive\");\n}",
 
             "output": "Player Alive",
 
             "step_by_step": [
               "health stores player health",
-              "condition checks if player is alive"
+              "Condition checks health > 0",
+              "Condition becomes true",
+              "if block executes",
+              "Player Alive gets printed"
             ],
 
-            "real_life": "Game health system."
+            "real_life": "Gaming health systems."
           },
 
           {
             "type": "shopping",
+
             "code": "double amount = 1000;\n\nif(amount > 500) {\n    System.out.println(\"Discount Applied\");\n}",
 
             "output": "Discount Applied",
 
             "step_by_step": [
               "amount stores shopping total",
-              "condition checks discount eligibility"
+              "Condition checks amount > 500",
+              "Condition becomes true",
+              "Discount block runs",
+              "Discount Applied gets printed"
             ],
 
             "real_life": "E-commerce discount systems."
@@ -121,13 +180,17 @@
 
           {
             "type": "login",
+
             "code": "boolean isLoggedIn = true;\n\nif(isLoggedIn) {\n    System.out.println(\"Welcome User\");\n}",
 
             "output": "Welcome User",
 
             "step_by_step": [
-              "boolean value is checked",
-              "true allows login"
+              "isLoggedIn stores true",
+              "if checks boolean value",
+              "Condition becomes true",
+              "Welcome block executes",
+              "Welcome User gets printed"
             ],
 
             "real_life": "Authentication systems."
@@ -140,17 +203,47 @@
 
         "purpose": "Runs one block if true and another block if false.",
 
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "if else handles both true and false conditions."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "One block runs when condition is true and another runs when false."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Apps use if else for pass/fail, login success, and payment checks."
+          },
+
+          {
+            "type": "technical",
+            "text": "if else provides alternate execution paths."
+          },
+
+          {
+            "type": "deep",
+            "text": "if else structures create binary decision-making systems in programs."
+          }
+        ],
+
         "examples": [
           {
             "type": "pass_fail",
+
             "code": "int marks = 40;\n\nif(marks >= 50) {\n    System.out.println(\"Pass\");\n} else {\n    System.out.println(\"Fail\");\n}",
 
             "output": "Fail",
 
             "step_by_step": [
               "marks stores 40",
-              "condition becomes false",
-              "else block runs"
+              "Condition checks marks >= 50",
+              "Condition becomes false",
+              "else block executes",
+              "Fail gets printed"
             ],
 
             "real_life": "Exam result systems."
@@ -158,43 +251,53 @@
 
           {
             "type": "even_odd",
+
             "code": "int number = 7;\n\nif(number % 2 == 0) {\n    System.out.println(\"Even\");\n} else {\n    System.out.println(\"Odd\");\n}",
 
             "output": "Odd",
 
             "step_by_step": [
-              "% checks remainder",
-              "7 % 2 becomes 1",
-              "condition becomes false",
-              "Odd is printed"
+              "number stores 7",
+              "7 % 2 gives remainder 1",
+              "Condition becomes false",
+              "else block runs",
+              "Odd gets printed"
             ],
 
-            "real_life": "Math calculations."
+            "real_life": "Math calculation systems."
           },
 
           {
             "type": "login_system",
+
             "code": "boolean passwordCorrect = false;\n\nif(passwordCorrect) {\n    System.out.println(\"Login Success\");\n} else {\n    System.out.println(\"Wrong Password\");\n}",
 
             "output": "Wrong Password",
 
             "step_by_step": [
-              "passwordCorrect is false",
-              "else block executes"
+              "passwordCorrect stores false",
+              "if condition becomes false",
+              "else block executes",
+              "Wrong Password gets printed",
+              "Program denies access"
             ],
 
-            "real_life": "App login systems."
+            "real_life": "Login systems."
           },
 
           {
             "type": "battery_check",
+
             "code": "int battery = 15;\n\nif(battery > 20) {\n    System.out.println(\"Battery OK\");\n} else {\n    System.out.println(\"Charge Phone\");\n}",
 
             "output": "Charge Phone",
 
             "step_by_step": [
-              "battery is below 20",
-              "else block runs"
+              "battery stores 15",
+              "Condition checks battery > 20",
+              "Condition becomes false",
+              "else block executes",
+              "Charge Phone gets printed"
             ],
 
             "real_life": "Mobile battery systems."
@@ -202,16 +305,20 @@
 
           {
             "type": "subscription",
+
             "code": "boolean isPremium = true;\n\nif(isPremium) {\n    System.out.println(\"Premium Access\");\n} else {\n    System.out.println(\"Free Access\");\n}",
 
             "output": "Premium Access",
 
             "step_by_step": [
-              "isPremium becomes true",
-              "premium block runs"
+              "isPremium stores true",
+              "Condition becomes true",
+              "Premium block runs",
+              "Premium Access gets printed",
+              "User receives premium access"
             ],
 
-            "real_life": "Subscription apps."
+            "real_life": "Subscription systems."
           }
         ]
       },
@@ -221,17 +328,47 @@
 
         "purpose": "Checks multiple conditions.",
 
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "else if checks multiple conditions."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "Programs test conditions one by one."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Apps use else if for grading, weather, and ranking systems."
+          },
+
+          {
+            "type": "technical",
+            "text": "else if creates chained conditional execution."
+          },
+
+          {
+            "type": "deep",
+            "text": "else if ladders support multi-condition decision systems."
+          }
+        ],
+
         "examples": [
           {
             "type": "grade_system",
+
             "code": "int marks = 85;\n\nif(marks >= 90) {\n    System.out.println(\"A Grade\");\n} else if(marks >= 75) {\n    System.out.println(\"B Grade\");\n} else {\n    System.out.println(\"C Grade\");\n}",
 
             "output": "B Grade",
 
             "step_by_step": [
-              "marks are below 90",
-              "second condition becomes true",
-              "B Grade is printed"
+              "marks stores 85",
+              "First condition becomes false",
+              "Second condition becomes true",
+              "B Grade block runs",
+              "B Grade gets printed"
             ],
 
             "real_life": "School grading systems."
@@ -239,16 +376,74 @@
 
           {
             "type": "weather_system",
+
             "code": "int temperature = 35;\n\nif(temperature > 40) {\n    System.out.println(\"Very Hot\");\n} else if(temperature > 30) {\n    System.out.println(\"Hot\");\n} else {\n    System.out.println(\"Normal\");\n}",
 
             "output": "Hot",
 
             "step_by_step": [
-              "temperature is 35",
-              "second condition becomes true"
+              "temperature stores 35",
+              "First condition becomes false",
+              "Second condition becomes true",
+              "Hot block runs",
+              "Hot gets printed"
             ],
 
-            "real_life": "Weather apps."
+            "real_life": "Weather applications."
+          },
+
+          {
+            "type": "game_level",
+
+            "code": "int score = 500;\n\nif(score >= 1000) {\n    System.out.println(\"Pro\");\n} else if(score >= 500) {\n    System.out.println(\"Intermediate\");\n} else {\n    System.out.println(\"Beginner\");\n}",
+
+            "output": "Intermediate",
+
+            "step_by_step": [
+              "score stores 500",
+              "First condition becomes false",
+              "Second condition becomes true",
+              "Intermediate block runs",
+              "Intermediate gets printed"
+            ],
+
+            "real_life": "Game ranking systems."
+          },
+
+          {
+            "type": "salary_system",
+
+            "code": "double salary = 70000;\n\nif(salary > 100000) {\n    System.out.println(\"High Salary\");\n} else if(salary > 50000) {\n    System.out.println(\"Medium Salary\");\n} else {\n    System.out.println(\"Low Salary\");\n}",
+
+            "output": "Medium Salary",
+
+            "step_by_step": [
+              "salary stores 70000",
+              "First condition becomes false",
+              "Second becomes true",
+              "Medium Salary gets printed",
+              "Program categorizes salary"
+            ],
+
+            "real_life": "Payroll systems."
+          },
+
+          {
+            "type": "internet_speed",
+
+            "code": "int speed = 80;\n\nif(speed > 100) {\n    System.out.println(\"Fast\");\n} else if(speed > 50) {\n    System.out.println(\"Normal\");\n} else {\n    System.out.println(\"Slow\");\n}",
+
+            "output": "Normal",
+
+            "step_by_step": [
+              "speed stores 80",
+              "First condition becomes false",
+              "Second condition becomes true",
+              "Normal gets printed",
+              "Program categorizes internet speed"
+            ],
+
+            "real_life": "Internet speed systems."
           }
         ]
       },
@@ -258,17 +453,47 @@
 
         "purpose": "Checks multiple fixed cases.",
 
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "switch checks multiple fixed options."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "switch is useful for menu-based programs."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Apps use switch for menus, days, and settings."
+          },
+
+          {
+            "type": "technical",
+            "text": "switch executes matching case blocks."
+          },
+
+          {
+            "type": "deep",
+            "text": "switch statements simplify handling multiple fixed conditions."
+          }
+        ],
+
         "examples": [
           {
             "type": "day_system",
+
             "code": "int day = 2;\n\nswitch(day) {\n    case 1:\n        System.out.println(\"Monday\");\n        break;\n    case 2:\n        System.out.println(\"Tuesday\");\n        break;\n    default:\n        System.out.println(\"Invalid Day\");\n}",
 
             "output": "Tuesday",
 
             "step_by_step": [
               "day stores 2",
+              "switch checks all cases",
               "case 2 matches",
-              "Tuesday is printed"
+              "Tuesday block executes",
+              "Tuesday gets printed"
             ],
 
             "real_life": "Calendar systems."
@@ -276,16 +501,74 @@
 
           {
             "type": "menu_system",
+
             "code": "int choice = 1;\n\nswitch(choice) {\n    case 1:\n        System.out.println(\"Start Game\");\n        break;\n    case 2:\n        System.out.println(\"Settings\");\n        break;\n}",
 
             "output": "Start Game",
 
             "step_by_step": [
-              "choice becomes 1",
-              "first case executes"
+              "choice stores 1",
+              "switch checks cases",
+              "case 1 matches",
+              "Start Game block runs",
+              "Start Game gets printed"
             ],
 
-            "real_life": "Game menus."
+            "real_life": "Gaming menus."
+          },
+
+          {
+            "type": "food_menu",
+
+            "code": "int item = 3;\n\nswitch(item) {\n    case 1:\n        System.out.println(\"Pizza\");\n        break;\n    case 2:\n        System.out.println(\"Burger\");\n        break;\n    case 3:\n        System.out.println(\"Pasta\");\n        break;\n}",
+
+            "output": "Pasta",
+
+            "step_by_step": [
+              "item stores 3",
+              "switch checks matching case",
+              "case 3 becomes true",
+              "Pasta block executes",
+              "Pasta gets printed"
+            ],
+
+            "real_life": "Restaurant ordering systems."
+          },
+
+          {
+            "type": "language_system",
+
+            "code": "int language = 1;\n\nswitch(language) {\n    case 1:\n        System.out.println(\"English\");\n        break;\n    case 2:\n        System.out.println(\"Tamil\");\n        break;\n}",
+
+            "output": "English",
+
+            "step_by_step": [
+              "language stores 1",
+              "switch checks cases",
+              "case 1 matches",
+              "English block executes",
+              "English gets printed"
+            ],
+
+            "real_life": "Language selection systems."
+          },
+
+          {
+            "type": "traffic_signal",
+
+            "code": "int signal = 2;\n\nswitch(signal) {\n    case 1:\n        System.out.println(\"Red\");\n        break;\n    case 2:\n        System.out.println(\"Yellow\");\n        break;\n    case 3:\n        System.out.println(\"Green\");\n        break;\n}",
+
+            "output": "Yellow",
+
+            "step_by_step": [
+              "signal stores 2",
+              "switch checks signal cases",
+              "case 2 matches",
+              "Yellow gets printed",
+              "Program identifies traffic signal"
+            ],
+
+            "real_life": "Traffic management systems."
           }
         ]
       }
@@ -295,7 +578,7 @@
       {
         "wrong": "if(age = 18)",
         "correct": "if(age == 18)",
-        "why_wrong": "= assigns value, == compares value."
+        "why_wrong": "= assigns value while == compares value."
       },
 
       {
@@ -307,7 +590,19 @@
       {
         "wrong": "switch(day)\ncase 1:",
         "correct": "switch(day) {\n    case 1:\n}",
-        "why_wrong": "switch needs curly braces."
+        "why_wrong": "switch requires curly braces."
+      },
+
+      {
+        "wrong": "if marks > 50",
+        "correct": "if(marks > 50)",
+        "why_wrong": "Conditions must be inside brackets."
+      },
+
+      {
+        "wrong": "case 1\nSystem.out.println(\"Hi\")",
+        "correct": "case 1:\nSystem.out.println(\"Hi\");",
+        "why_wrong": "case statements require colon :"
       }
     ],
 
@@ -324,8 +619,7 @@
       "Build pass/fail system.",
       "Check even or odd number.",
       "Create grade calculator.",
-      "Build simple menu system.",
-      "Create weather temperature checker."
+      "Build simple menu system."
     ],
 
     "quiz": [
@@ -357,6 +651,7 @@
 
     "mini_project": {
       "title": "Student Result System",
+
       "task": "Take marks input and print grade, pass/fail status, and remarks using control flow statements."
     },
 
