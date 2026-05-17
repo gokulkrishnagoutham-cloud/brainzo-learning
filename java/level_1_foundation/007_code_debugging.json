@@ -2,12 +2,20 @@
   "id": "java_foundation_007",
   "title": "Code Debugging in Java",
   "difficulty": "Beginner",
-  "estimatedMinutes": 45,
+  "estimatedMinutes": 55,
 
   "content": {
-    "topic_intro": "Debugging means finding and fixing errors in programs.",
+    "topic_intro": {
+      "text": "Debugging means finding and fixing problems in Java programs. Every programmer makes mistakes, and debugging helps identify errors and make programs work correctly."
+    },
 
-    "why_learn_this": "Every programmer makes mistakes. Debugging helps identify problems and make programs work correctly.",
+    "why_learn_this": [
+      "Every programmer encounters errors while coding",
+      "Debugging helps programs work correctly",
+      "Apps crash without proper debugging",
+      "Companies spend huge time fixing bugs",
+      "Good debugging skills make developers faster and smarter"
+    ],
 
     "explanations": [
       {
@@ -17,40 +25,51 @@
 
       {
         "type": "real_life",
-        "text": "Debugging is like repairing a broken machine by finding which part is causing the problem."
+        "text": "Debugging is like repairing a broken machine by finding which part causes the problem."
       },
 
       {
         "type": "student_friendly",
-        "text": "When your code does not work, debugging helps you understand why."
+        "text": "When your code does not work, debugging helps understand why."
       },
 
       {
         "type": "technical",
-        "text": "Debugging is the process of analyzing, locating, and resolving software errors."
+        "text": "Debugging is the process of locating, analyzing, and resolving software errors."
       },
 
       {
         "type": "deep",
-        "text": "Debugging involves tracing execution flow, identifying logical or syntax failures, and correcting runtime behavior."
+        "text": "Debugging involves tracing execution flow, identifying failures, and correcting syntax, runtime, or logical issues."
       }
     ],
 
-    "basic_terms": {
-      "bug": "An error or problem in code.",
-      "debugging": "The process of fixing bugs.",
-      "syntax_error": "Wrong Java syntax.",
-      "runtime_error": "Error occurring while program runs.",
-      "logical_error": "Program runs but gives wrong output.",
+    "basic_terms": [
+      {
+        "term": "Bug",
+        "meaning": "An error or problem in code."
+      },
 
-      "example": "int age = ;",
+      {
+        "term": "Debugging",
+        "meaning": "The process of fixing bugs."
+      },
 
-      "breakdown": [
-        "Variable declaration is incomplete",
-        "Java expects a value after =",
-        "Compiler throws syntax error"
-      ]
-    },
+      {
+        "term": "Syntax Error",
+        "meaning": "Error caused by incorrect Java syntax."
+      },
+
+      {
+        "term": "Runtime Error",
+        "meaning": "Error occurring while program executes."
+      },
+
+      {
+        "term": "Logical Error",
+        "meaning": "Program runs but produces wrong output."
+      }
+    ],
 
     "error_types": [
 
@@ -58,6 +77,33 @@
         "name": "Syntax Errors",
 
         "purpose": "Errors caused by incorrect Java syntax.",
+
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Syntax errors happen when Java rules are broken."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "The program cannot start because code format is wrong."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Syntax errors are like spelling mistakes in language."
+          },
+
+          {
+            "type": "technical",
+            "text": "Compiler detects syntax errors before execution."
+          },
+
+          {
+            "type": "deep",
+            "text": "Syntax errors prevent successful compilation because Java grammar rules are violated."
+          }
+        ],
 
         "examples": [
           {
@@ -70,8 +116,12 @@
             "step_by_step": [
               "Java expects a value",
               "No value is provided",
-              "Compiler shows error"
-            ]
+              "Compiler detects invalid syntax",
+              "Compilation fails",
+              "Program cannot run"
+            ],
+
+            "real_life": "Like leaving answer blank in form."
           },
 
           {
@@ -82,9 +132,14 @@
             "why_wrong": "Semicolon is missing.",
 
             "step_by_step": [
-              "Java statements end with ;",
-              "Missing semicolon causes syntax error"
-            ]
+              "Java statements require semicolon",
+              "Compiler checks statement ending",
+              "Semicolon is missing",
+              "Syntax error appears",
+              "Program stops compiling"
+            ],
+
+            "real_life": "Like missing punctuation in sentence."
           },
 
           {
@@ -95,9 +150,14 @@
             "why_wrong": "Strings use double quotes.",
 
             "step_by_step": [
+              "Java reads single quotes",
               "Single quotes are for char",
-              "String requires double quotes"
-            ]
+              "String requires double quotes",
+              "Compiler detects mismatch",
+              "Compilation fails"
+            ],
+
+            "real_life": "Using wrong container for object."
           },
 
           {
@@ -105,12 +165,17 @@
 
             "correct_code": "if(age == 18)",
 
-            "why_wrong": "= assigns value, == compares values.",
+            "why_wrong": "= assigns value while == compares values.",
 
             "step_by_step": [
-              "Java expects comparison",
-              "Single = changes value instead"
-            ]
+              "if expects comparison",
+              "= changes variable value",
+              "Condition becomes invalid",
+              "Compiler shows error",
+              "Program cannot continue"
+            ],
+
+            "real_life": "Confusing assignment with checking."
           },
 
           {
@@ -121,9 +186,14 @@
             "why_wrong": "class keyword spelling is incorrect.",
 
             "step_by_step": [
-              "Java keywords must be exact",
-              "clas is invalid"
-            ]
+              "Java checks keywords",
+              "clas is invalid keyword",
+              "Compiler cannot recognize it",
+              "Syntax error appears",
+              "Compilation stops"
+            ],
+
+            "real_life": "Typing wrong spelling in exam."
           }
         ]
       },
@@ -132,6 +202,33 @@
         "name": "Runtime Errors",
 
         "purpose": "Errors occurring during execution.",
+
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Runtime errors happen while program is running."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "The program starts but crashes during execution."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Apps crashing suddenly is often caused by runtime errors."
+          },
+
+          {
+            "type": "technical",
+            "text": "Runtime errors occur after successful compilation."
+          },
+
+          {
+            "type": "deep",
+            "text": "Runtime failures happen due to invalid operations during execution flow."
+          }
+        ],
 
         "examples": [
           {
@@ -142,10 +239,14 @@
             "why_wrong": "Division by zero is impossible.",
 
             "step_by_step": [
-              "Program starts correctly",
+              "Program compiles correctly",
+              "Execution begins",
               "Division by zero occurs",
+              "ArithmeticException happens",
               "Program crashes"
-            ]
+            ],
+
+            "real_life": "Impossible mathematical operation."
           },
 
           {
@@ -156,10 +257,14 @@
             "why_wrong": "null has no value to access.",
 
             "step_by_step": [
-              "name contains null",
-              "length() tries to access missing value",
-              "NullPointerException occurs"
-            ]
+              "name stores null",
+              "length() tries accessing value",
+              "No object exists",
+              "NullPointerException occurs",
+              "Program crashes"
+            ],
+
+            "real_life": "Trying to open empty box."
           },
 
           {
@@ -170,10 +275,50 @@
             "why_wrong": "Array index exceeds size.",
 
             "step_by_step": [
-              "Array size is 3",
+              "Array size becomes 3",
               "Valid indexes are 0,1,2",
-              "Index 5 causes error"
-            ]
+              "Index 5 does not exist",
+              "ArrayIndexOutOfBoundsException occurs",
+              "Program crashes"
+            ],
+
+            "real_life": "Trying to access missing shelf."
+          },
+
+          {
+            "wrong_code": "Scanner sc = null;\nsc.nextInt();",
+
+            "correct_code": "Scanner sc = new Scanner(System.in);",
+
+            "why_wrong": "Scanner object was never created.",
+
+            "step_by_step": [
+              "Scanner stores null",
+              "nextInt() is called",
+              "No object exists",
+              "NullPointerException occurs",
+              "Program crashes"
+            ],
+
+            "real_life": "Using machine that was never turned on."
+          },
+
+          {
+            "wrong_code": "String text = \"Java\";\nSystem.out.println(text.charAt(10));",
+
+            "correct_code": "System.out.println(text.charAt(1));",
+
+            "why_wrong": "Character position exceeds String length.",
+
+            "step_by_step": [
+              "Java has length 4",
+              "Index 10 does not exist",
+              "Program checks invalid position",
+              "StringIndexOutOfBoundsException occurs",
+              "Program crashes"
+            ],
+
+            "real_life": "Trying to access missing page in book."
           }
         ]
       },
@@ -182,6 +327,33 @@
         "name": "Logical Errors",
 
         "purpose": "Program runs but gives wrong output.",
+
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Logical errors produce wrong results."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "The program works but answers are incorrect."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Wrong calculations in banking apps are logical errors."
+          },
+
+          {
+            "type": "technical",
+            "text": "Logical errors occur due to incorrect program logic."
+          },
+
+          {
+            "type": "deep",
+            "text": "Logical flaws produce unexpected behavior despite successful execution."
+          }
+        ],
 
         "examples": [
           {
@@ -192,10 +364,14 @@
             "why_wrong": "Wrong operator used.",
 
             "step_by_step": [
-              "Program runs successfully",
-              "Logic is incorrect",
-              "Wrong answer is produced"
-            ]
+              "Program executes successfully",
+              "Subtraction happens instead of addition",
+              "Wrong result is generated",
+              "Logic becomes incorrect",
+              "Output becomes wrong"
+            ],
+
+            "real_life": "Incorrect billing calculation."
           },
 
           {
@@ -206,9 +382,14 @@
             "why_wrong": "18 should also be included.",
 
             "step_by_step": [
-              "Condition misses exact value 18",
-              "Logic becomes incorrect"
-            ]
+              "Condition checks greater than 18",
+              "Age 18 is ignored",
+              "Logic becomes incomplete",
+              "Wrong condition is used",
+              "Users get wrong result"
+            ],
+
+            "real_life": "Wrong eligibility checking."
           },
 
           {
@@ -219,10 +400,50 @@
             "why_wrong": "Integer division removes decimal values.",
 
             "step_by_step": [
-              "Both numbers are int",
-              "Decimal part is lost",
-              "Wrong average appears"
-            ]
+              "Both values are int",
+              "Integer division occurs",
+              "Decimal values are removed",
+              "Wrong average appears",
+              "Output becomes inaccurate"
+            ],
+
+            "real_life": "Incorrect student average calculation."
+          },
+
+          {
+            "wrong_code": "if(password == \"admin\")",
+
+            "correct_code": "if(password.equals(\"admin\"))",
+
+            "why_wrong": "== compares references instead of content.",
+
+            "step_by_step": [
+              "== compares memory references",
+              "String content is ignored",
+              "Condition becomes unreliable",
+              "Wrong login result appears",
+              "Program logic fails"
+            ],
+
+            "real_life": "Login system bug."
+          },
+
+          {
+            "wrong_code": "for(int i = 1; i <= 5; i--)",
+
+            "correct_code": "for(int i = 1; i <= 5; i++)",
+
+            "why_wrong": "Loop moves in wrong direction.",
+
+            "step_by_step": [
+              "Loop starts at 1",
+              "i decreases instead of increasing",
+              "Condition never becomes false",
+              "Infinite loop occurs",
+              "Program hangs"
+            ],
+
+            "real_life": "Frozen applications."
           }
         ]
       }
@@ -233,7 +454,32 @@
       {
         "method": "Reading Error Messages",
 
-        "explanation": "Java error messages tell what went wrong and where.",
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Error messages explain what went wrong."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "Java tells where error happened."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Error messages are like warning signals."
+          },
+
+          {
+            "type": "technical",
+            "text": "Exceptions provide stack trace information."
+          },
+
+          {
+            "type": "deep",
+            "text": "Understanding exceptions speeds up debugging significantly."
+          }
+        ],
 
         "example": "Exception in thread \"main\" java.lang.ArithmeticException: / by zero"
       },
@@ -241,27 +487,34 @@
       {
         "method": "Using print statements",
 
-        "explanation": "Print variable values to check program flow.",
+        "explanations": [
+          {
+            "type": "simple",
+            "text": "Print statements help track values."
+          },
+
+          {
+            "type": "student_friendly",
+            "text": "Print variables to understand execution flow."
+          },
+
+          {
+            "type": "real_life",
+            "text": "Developers use logs to identify issues."
+          },
+
+          {
+            "type": "technical",
+            "text": "Console output helps inspect runtime state."
+          },
+
+          {
+            "type": "deep",
+            "text": "Tracing variable changes helps isolate program failures."
+          }
+        ],
 
         "example": "System.out.println(age);"
-      },
-
-      {
-        "method": "Checking logic step by step",
-
-        "explanation": "Analyze program execution line by line."
-      },
-
-      {
-        "method": "Using IDE debugging tools",
-
-        "explanation": "Modern IDEs help track variable values and execution."
-      },
-
-      {
-        "method": "Testing small parts",
-
-        "explanation": "Debug one section at a time instead of entire program."
       }
     ],
 
@@ -286,8 +539,7 @@
       "Fix String quote errors.",
       "Fix if condition mistakes.",
       "Debug division by zero.",
-      "Fix array index errors.",
-      "Correct logical mistakes."
+      "Fix array index errors."
     ],
 
     "quiz": [
@@ -319,6 +571,7 @@
 
     "mini_project": {
       "title": "Bug Fix Challenge",
+
       "task": "Create a Java file with 10 intentional mistakes and fix all syntax, runtime, and logical errors."
     },
 
